@@ -1,0 +1,17 @@
+name: Auto Assign Reviewers
+
+on:
+  pull_request:
+    types: [opened, reopened]
+
+jobs:
+  assign-reviewers:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Add Reviewers
+        uses: peter-evans/create-pull-request@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          reviewers: adrienne365,FireL0ki,Seolcita # Replace with GitHub usernames of the reviewers
