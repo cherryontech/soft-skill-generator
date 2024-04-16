@@ -1,17 +1,23 @@
-name: Auto Assign Reviewers
+name: Auto add reviewers
 
 on:
-  pull_request:
-    types: [opened, reopened]
+  pull_request_target:
 
 jobs:
-  assign-reviewers:
+  add-reviewers:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-      - name: Add Reviewers
-        uses: peter-evans/create-pull-request@v4
+      - name: Add reviewers
+        uses: actions/github-script@v5
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          reviewers: adrienne365,FireL0ki,Seolcita
+          github-token: ${{secrets.GITHUB_TOKEN}}
+          script: |
+            const prNumber = context.payload.pull_request.number;
+            const reviewers = ["adrienne365", "FireL0ki", "Seolcita"]; 
+            github.pulls.requestReviewers({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              pull_number: prNumber,
+              reviewers: reviewers
+            });
