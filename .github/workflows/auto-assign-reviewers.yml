@@ -14,4 +14,4 @@ jobs:
         uses: peter-evans/create-pull-request@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          reviewers: adrienne365,FireL0ki,Seolcita # Replace with GitHub usernames of the reviewers
+          reviewers: adrienne365,FireL0ki,Seolcita
