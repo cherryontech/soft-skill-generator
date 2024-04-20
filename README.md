@@ -1,6 +1,9 @@
 # Soft Skills Generator
 Cherry On Tech Spring Cohort 2024: Saturn Spinners Squad
 
+## Deployment Status
+[![Netlify Status](https://api.netlify.com/api/v1/badges/678a843c-0add-4fd7-8331-d188405ca866/deploy-status)](https://app.netlify.com/sites/softskill-generator/deploys)
+
 ## Overview
 This app was created in response to high occurances of imposter syndrome in individuals, who are new to tech, looking to break into software engineering roles.
 
