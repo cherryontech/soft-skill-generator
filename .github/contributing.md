@@ -15,6 +15,23 @@ Please note we have a code of conduct, please follow it in all your interactions
 4. You may merge the Pull Request in once you have the sign-off of two other developers, or if you 
    do not have permission to do that, you may request the second reviewer to merge it for you.
 
+## Review Guidelines:
+When reviewing, use the following list of comment labels from <a href="https://conventionalcomments.org/">*conventional comments* </a> to make comments clear & quickly parseable.
+
+### Comment Types
+- **Praise:** Highlight positives.
+- **Suggestion:** Propose improvements.
+- **Issue:** Point out problems.
+- **TODO:** Highlight necessary changes.
+- **Question:** Raise concerns for clarification.
+
+### Decorations:
+- (optional): Indicates the comment is not always necessary.
+- (blocking/non-blocking): Specifies urgency level.
+
+*example*: 
+<br>**Issue (non-blocking):** The < h1 > on line 3 is in the incorrect spot. <br>**Praise**: This code is very clear & concise!
+
 ## Code of Conduct
 
 ### Our Pledge
