@@ -18,14 +18,17 @@ Brief description of the changes introduced in this pull request.
 ## Review Guidelines:
 When reviewing, use the following list of comment labels to make comments clear & quickly parseable.
 
-Comment Types:
+### Comment Types
 - **Praise:** Highlight positives.
 - **Suggestion:** Propose improvements.
 - **Issue:** Point out problems.
 - **TODO:** Highlight necessary changes.
 - **Question:** Raise concerns for clarification.
 
-Decorations:
+### Decorations:
 - (optional): Indicates the comment is not always necessary.
 - (blocking/non-blocking): Specifies urgency level.
+
+*example*: 
+<br>**Issue (non-blocking):** The < h1 > on line 3 is in the incorrect spot. <br>**Praise**: This code is very clear & concise!
 
