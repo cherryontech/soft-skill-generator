@@ -1,23 +1,24 @@
-name: Auto add reviewers
+# TODO: causing Netlify deployment errors; comment out for testing
+# name: Auto add reviewers
 
-on:
-  pull_request_target:
+# on:
+#   pull_request_target:
 
-jobs:
-  add-reviewers:
-    runs-on: ubuntu-latest
+# jobs:
+#   add-reviewers:
+#     runs-on: ubuntu-latest
 
-    steps:
-      - name: Add reviewers
-        uses: actions/github-script@v5
-        with:
-          github-token: ${{secrets.GITHUB_TOKEN}}
-          script: |
-            const prNumber = context.payload.pull_request.number;
-            const reviewers = ["adrienne365", "FireL0ki"]; 
-            github.pulls.requestReviewers({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              pull_number: prNumber,
-              reviewers: reviewers
-            });
+#     steps:
+#       - name: Add reviewers
+#         uses: actions/github-script@v5
+#         with:
+#           github-token: ${{secrets.GITHUB_TOKEN}}
+#           script: |
+#             const prNumber = context.payload.pull_request.number;
+#             const reviewers = ["adrienne365", "FireL0ki"]; 
+#             github.pulls.requestReviewers({
+#               owner: context.repo.owner,
+#               repo: context.repo.repo,
+#               pull_number: prNumber,
+#               reviewers: reviewers
+#             });
