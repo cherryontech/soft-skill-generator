@@ -1,19 +1,17 @@
-# Comment out for testing: error on line 19- 
-name: Request Review on PRs
+name: Auto add reviewers
 
 on:
-  pull_request:
-    types: [opened]
+  pull_request_target:
 
 jobs:
   add-reviewers:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Auto request review on PR
+      - name: Add reviewers
         uses: actions/github-script@v5
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{secrets.GITHUB_TOKEN}}
           script: |
             const prNumber = context.payload.pull_request.number;
             const reviewers = ["adrienne365", "FireL0ki"]; 
