@@ -3,7 +3,7 @@
 
 Brief description of the changes introduced in this pull request.
 
-### Add Screenshots (if applicable)
+Add Screenshots (if applicable).
 
 ## Testing / Acceptance Criteria
 
@@ -16,7 +16,7 @@ Brief description of the changes introduced in this pull request.
 - [ ] I have updated the documentation(if applicable).
 
 ## Review Guidelines:
-When reviewing, use the following list of comment labels to make comments clear & quickly parseable.
+When reviewing, use the following list of comment labels from <a href="https://conventionalcomments.org/">*conventional comments* </a> to make comments clear & quickly parseable.
 
 ### Comment Types
 - **Praise:** Highlight positives.
