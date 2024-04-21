@@ -39,13 +39,6 @@ Before you begin, ensure you have the following installed on your system:
 - Install dependencies
    - `npm install`
 
-### Running the Application
-
-1. Start the development server: `npm start`
-2. Open your web browser and navigate to:
-http://localhost:3000
-- You should see the application running live!
-
 
 #### Available Scripts
 In the project directory, you can run the following scripts:
