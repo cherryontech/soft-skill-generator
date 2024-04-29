@@ -14,4 +14,4 @@ Add Screenshots (if applicable).
 
 - [ ] I have tested the changes locally.
 - [ ] I have updated the documentation(if applicable).
-
+- [ ] I have **requested review** from the other 2 developers on the project
