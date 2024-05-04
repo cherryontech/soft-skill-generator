@@ -1,81 +1,59 @@
-import React from 'react'
-import "./LandingPage.css";
+import React from 'react';
 
-export const LandingPage = () => {
+const LandingPage: React.FC = () => {
   return (
-    <div className="landing-page">
-      <div className="div">
-        <div className="landing-page-wrapper">
-          <div className="div-4">
-            <div className="div-5">
-              <div className="div-6">
-                <p className="text-wrapper">Have You Ever Struggled to Communicate Your Full Potential?</p>
-                <p className="p">
-                  more inforLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                  labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
-                </p>                  
-              </div>
-            </div>                                                                                                       
-            <div className="overlap-group-wrapper">
-              <div className="overlap-group">
-                <img className="icon" alt="Icon" src="icon.svg" />
-                <img className="unsplash-i" alt="Unsplash i" src="unsplash-i-epv9dxg7u.png" />
-              </div>
-            </div>
-          </div>
+    <div className="flex flex-col items-center p-4 bg-gray-100">
+      {/* Intro Section */}
+      <section className="flex justify-between items-center w-full mb-4">
+        <div className="flex gap-4">
+          <img className="w-12 h-12" src="icon.svg" alt="Icon" />
+          <img className="w-32 h-32 rounded-lg" src="unsplash-image.png" alt="Unsplash Image" />
         </div>
-      </div>
-      <div className="text-wrapper-2">What do we do?</div>
-      <div className="div-7">
-        <div className="div-8" />
-        <div className="div-9">
-          <div className="text-wrapper-3">Overcoming Imposter Syndrome</div>
-          <p className="text-wrapper-4">
-            We help early-career developers facing imposter syndrome during the job application process. We foster
-            self-assurance by helping users to identify and showcase their skills.
+        <div className="text-xl font-semibold">
+          Have You Ever Struggled to Communicate Your Full Potential?
+        </div>
+        <p className="text-sm">
+          We provide assistance to early-career developers facing imposter syndrome during job applications,
+          helping them identify and showcase their skills confidently.
+        </p>
+      </section>
+
+      {/* Services Section */}
+      <section className="flex flex-col gap-4">
+        <div className="bg-yellow-300 p-4 rounded-lg">
+          <h2 className="text-lg font-semibold">Overcoming Imposter Syndrome</h2>
+          <p className="text-sm">
+            Our goal is to empower developers by fostering self-assurance during the job application process.
           </p>
         </div>
-      </div>
-      <div className="div-10">
-        <div className="div-11">
-          <div className="text-wrapper-5">Identifying Transferable Skills</div>
-          <p className="text-wrapper-4">
-            more inforLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+        <div className="bg-yellow-300 p-4 rounded-lg">
+          <h2 className="text-lg font-semibold">Identifying Transferable Skills</h2>
+          <p className="text-sm">
+            We help in recognizing and showcasing transferable skills essential for career growth.
           </p>
         </div>
-        <div className="unsplash-wrapper">
-          <img className="unsplash" alt="Unsplash" src="unsplash-ic5f0ozntlw.png" />
-        </div>
-      </div>
-      <div className="div-12">
-        <div className="text-wrapper-6">Who is it for?</div>
-        <div className="div-13">
-          <div className="div-14" />
-          <div className="div-15">
-            <div className="div-16">
-              <div className="ellipse" />
-              <p className="text-wrapper-7">more inforLorem ipsum dolor sit amet, consectetur adipiscing</p>
-            </div>
-            <div className="div-16">
-              <div className="ellipse" />
-              <p className="text-wrapper-7">more inforLorem ipsum dolor sit amet, consectetur adipiscing</p>
-            </div>
-            <div className="div-16">
-              <div className="ellipse" />
-              <p className="text-wrapper-7">more inforLorem ipsum dolor sit amet, consectetur adipiscing</p>
-            </div>
-            <div className="div-16">
-              <div className="ellipse" />
-              <p className="text-wrapper-7">more inforLorem ipsum dolor sit amet, consectetur adipiscing</p>
-            </div>
-            <div className="div-16">
-              <div className="ellipse" />
-              <p className="text-wrapper-7">more inforLorem ipsum dolor sit amet, consectetur adipiscing</p>
-            </div>
+      </section>
+
+      {/* Target Audience Section */}
+      <section className="flex flex-col gap-4">
+        <div className="text-xl font-semibold">Who is it for?</div>
+        <div className="flex flex-wrap gap-2">
+          <div className="flex items-center gap-2">
+            <div className="w-4 h-4 rounded-full bg-gray-400"></div>
+            <p className="text-sm">Early-career developers seeking job opportunities.</p>
+          </div>
+          <div className="flex items-center gap-2">
+            <div className="w-4 h-4 rounded-full bg-gray-400"></div>
+            <p className="text-sm">Individuals struggling with imposter syndrome.</p>
+          </div>
+          <div className="flex items-center gap-2">
+            <div className="w-4 h-4 rounded-full bg-gray-400"></div>
+            <p className="text-sm">Anyone looking to enhance their communication skills.</p>
           </div>
         </div>
-      </div>
+      </section>
     </div>
   );
 };
+
+export default LandingPage;
