@@ -1,7 +1,6 @@
 import React from 'react'
 import './App.css'
-import { Frame } from './LandingPage'
-import { LandingPage } from './components/LandingPage'
+import LandingPage from './components/LandingPage'
 
 function App() {
   return (
