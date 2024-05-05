@@ -1,46 +1,65 @@
 import React from 'react';
 
+// Order of applying Tailwind CSS Classes:
+// Layout Properties -> Typography -> Background/Borders -> Flexbox & Grid -> Spacing -> Utility Classes
+
 const LandingPage: React.FC = () => {
   return (
     // body div
     <div className="flex flex-col h-screen justify-center items-center bg-white-100">
 
-      {/* Section 1: What do we do? */}
+      {/* Container A: What do we do? */}
       <div className="text-center mb-4">
         <h2 className="text-lg font-bold text-black-800">What do we do?</h2>
       </div>
 
-      {/* Subsections stacked vertically */}
+    {/* Container B: Images & paragraphs */}
+    <div className="flex flex-col md:flex-row bg-200 p-4 mb-4 items-start">
 
-       {/* Subsection 1 */}
-      <div className="flex flex-col md:flex-row bg-gray-200 p-4 mb-4 items-center">
-        {/* Placeholder Image - left side of subsection 1 */}
-        <div className="md:w-1/3 flex justify-center mb-4 md:mb-0">
+      {/* Section 1: Overcoming Imposter Syndrome */}
+      <div className="md:w-full md:max-w-screen-lg flex items-start md:items-center mb-12">
+        {/* 1.1: Image - left side */}
+        <div className="pr-12">
           <img
-            className="w-48 h-32 rounded-lg"
-            src="https://via.placeholder.com/300x200"
-            alt="Placeholder Image"
+            className="w-full h-auto rounded-lg"
+            src="src\assets\overcoming_imposter_syndrome.png"
+            alt="Overcoming Imposter Syndrome"
           />
         </div>
-
-        {/* Header and Paragraph - right side of subsection 1 */}
-        <div className="md:w-2/3 md:pl-4">
+        {/* 1.2: Header and Paragraph - right side */}
+        <div className="flex flex-col">
           <h3 className="text-md font-semibold text-black-700 mb-2">Overcoming Imposter Syndrome</h3>
-          <p className="text-sm text-black-600">
+          <p className="text-sm text-black-600 mb-4">
             We help early-career developers facing imposter syndrome during the job application process. We foster self-assurance by helping users to identify and showcase their skills.
-          </p>
-        </div>
-
-        {/* Subsection 2 */}
-        <div className="bg-gray-200 p-4">
-          <h3 className="text-md font-semibold text-gray-700">Service 2</h3>
-          <p className="text-sm text-gray-600">
-            This is the second service we offer.
           </p>
         </div>
       </div>
 
+      {/* Section 2: Identifying Transferable Skills */}
+      <div className="md:w-full md:max-w-screen-lg flex items-start md:items-center">
+        {/* 2.1: Image - left side */}
+        <div className="pr-12">
+          <img
+            className="w-full h-auto rounded-lg"
+            src="src\assets\identify_transferable_skills.png"
+            alt="Identifying Transferable Skills"
+          />
+        </div>
+        {/* 2.2: Header and Paragraph - right side */}
+        <div className="flex flex-col">
+          <h3 className="text-md font-semibold text-black-700 mb-2">Identifying Transferable Skills</h3>
+          <p className="text-sm text-black-600 mb-4">
+            More information about identifying transferable skills goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.
+          </p>
+        </div>
+      </div>
+    </div>
 
+
+
+
+
+{/* TODO BELOW: */}
       {/* Section 2 */}
       <div className="w-full h-1/4 bg-green-200 flex justify-center items-center">
         Section 2
