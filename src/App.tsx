@@ -5,7 +5,7 @@ function App() {
   return (
     <>
     <h1 className="text-3xl font-bold underline">
-      Hello world! Test deploy!
+      Hello world! Test update commit!
     </h1>
     </>
   )
