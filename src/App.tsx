@@ -1,18 +1,17 @@
 import React from 'react'
 import './App.css'
 import LandingPage from './components/LandingPage'
+import Footer from '../src/components/Footer'
+import logo from '../src/assets/logo.jpg'
 
 function App() {
   return (
     <>
-      {/* <h1 className="text-3xl font-bold underline">
-        Hello world! Test deploy!
-      </h1> */}
-
     <div className="App">
       <LandingPage />
     </div>
 
+    <Footer title={logo}/>
     </>
   )
 }
