@@ -80,12 +80,12 @@ const LandingPage: React.FC = () => {
           <h2 className="text-lg font-bold text-black-800">Complete in 3 simple steps</h2>
         </div>
 
-        <div className="flex flex-row m-4 flex-shrink">
+        <div className="flex flex-row m-4 justify-between">
 
           <div className="bg-darkPurple p-4 m-4 rounded-lg h-auto w-auto">
-            <div className="flex justify-center items-center h-20 w-20 rounded-full bg-gray-200">
+            <div className="flex justify-center items-center h-20 w-20 rounded-full overflow-hidden ring-1 ring-white bg-darkPurple">
               <img src="path_to_your_image.jpg" alt="Placeholder" 
-              className="rounded-full h-full w-full object-cover" />
+              className="rounded-full object-cover" />
             </div>
             <div className="text-white mt-4">
               <h1>Answer Our Questions</h1>
@@ -97,10 +97,11 @@ const LandingPage: React.FC = () => {
             </div>
           </div>
 
+
           <div className="bg-darkPurple p-4 m-4 rounded-lg h-auto w-auto">
-            <div className="flex justify-center items-center h-20 w-20 rounded-full bg-gray-200">
+            <div className="flex justify-center items-center h-20 w-20 rounded-full overflow-hidden ring-1 ring-white bg-darkPurple">
               <img src="path_to_your_image.jpg" alt="Placeholder" 
-              className="rounded-full h-full w-full object-cover" />
+              className="rounded-full object-cover" />
             </div>
             <div className="text-white mt-4">
               <h1>Share Your Experience</h1>
@@ -112,10 +113,11 @@ const LandingPage: React.FC = () => {
             </div>
           </div>
 
+
           <div className="bg-darkPurple p-4 m-4 rounded-lg h-auto w-auto">
-            <div className="flex justify-center items-center h-20 w-20 rounded-full bg-gray-200">
+            <div className="flex justify-center items-center h-20 w-20 rounded-full overflow-hidden ring-1 ring-white bg-darkPurple">
               <img src="path_to_your_image.jpg" alt="Placeholder" 
-              className="rounded-full h-full w-full object-cover" />
+              className="rounded-full object-cover" />
             </div>
             <div className="text-white mt-4">
               <h1>Get Personalized Results</h1>
