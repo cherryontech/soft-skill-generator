@@ -27,8 +27,8 @@ const LandingPage: React.FC = () => {
                 </div>
                 {/* 1.2: Header and Paragraph - right side */}
                 <div className="flex flex-col">
-                  <h3 className="text-md font-semibold text-black-700 mb-2">Identify Your Transferable Skills</h3>
-                  <p className="text-sm text-black-600 mb-4">
+                  <h3 className="text-md font-semibold text-black-700 mb-2 text-left">Identify Your Transferable Skills</h3>
+                  <p className="text-sm text-black-600 mb-4 text-left">
                   Discover the skills that bridge the gap between your current role and your desired career path. Transferable skills are the key to transitioning successfully into a new field.
                   </p>
                 </div>
@@ -46,8 +46,8 @@ const LandingPage: React.FC = () => {
                 </div>
                 {/* 2.2: Header and Paragraph - right side */}
                 <div className="flex flex-col">
-                  <h3 className="text-md font-semibold text-black-700 mb-2">Confidently Communicate Your Skills</h3>
-                  <p className="text-sm text-black-600 mb-4">
+                  <h3 className="text-md font-semibold text-black-700 mb-2 text-left">Confidently Communicate Your Skills</h3>
+                  <p className="text-sm text-black-600 mb-4 text-left">
                   Overcome self-doubt and insecurity by learning how to effectively communicate your achievements and capabilities. EmpowerMe helps you articulate your value with clarity and confidence.
                   </p>
                 </div>
@@ -58,16 +58,56 @@ const LandingPage: React.FC = () => {
 
 {/* TODO BELOW: */}
       {/* Container B: Who is it for? */}
-      <div className="w-full h-1/4 bg-white-200 flex justify-center items-center">
+      <div className="w-full h-full bg-white-200 flex flex-col">
         <div className="text-center mb-4">
           <h2 className="text-lg font-bold text-black-800">Who is it for?</h2>
+        </div>
+
+        {/* Column of check marks & career switchers */}
+        <div className="flex flex-col mt-6 items-start">
+          {/* checkmark row 1 */}
+          <div className="flex items-center p-2 mb-2">
+            <div className="h-5 w-5">
+              <img 
+                className="bg-yellow p-1 rounded-md"
+                src="src/assets/checkmark.png"
+                alt="a checkmark in a small yellow box"
+              />
+            </div>
+            <div className="text-lg pl-4">Career Switcher</div>
+          </div>
+
+          {/* checkmark row 2 */}
+          <div className="flex items-center p-2 mb-2">
+            <div className="h-5 w-5">
+              <img 
+                className="bg-yellow p-1 rounded-md"
+                src="src/assets/checkmark.png"
+                alt="a checkmark in a small yellow box"
+              />
+            </div>
+            <div className="text-lg pl-4">Career Switcher</div>
+          </div>
+
+          {/* checkmark row 3 */}
+          <div className="flex items-center p-2 mb-2">
+            <div className="h-5 w-5">
+              <img 
+                className="bg-yellow p-1 rounded-md"
+                src="src/assets/checkmark.png"
+                alt="a checkmark in a small yellow box"
+              />
+            </div>
+            <div className="text-lg pl-4">Career Switcher</div>
+          </div>
+
         </div>
       </div>
 
       {/* Container C: Quote */}
-      <div className="w-full h-1/4 bg-yellow-200 flex justify-center items-center">
+      <div className="w-full h-full bg-red-200 flex justify-center items-center">
         <div className="">
-          <p className="text-sm text-black-600 mb-4">
+          <p className="flex justify-center text-sm text-black-600 mb-4">
             EmpowerMe is completely free because we believe everyone deserves a fair chance in this field. 
             Let's level the playing field together and make it effortless to harness and showcase your transferable skills in the tech industry.
           </p>
@@ -75,7 +115,7 @@ const LandingPage: React.FC = () => {
       </div>
 
       {/* Container 4: Complete in 3 simple steps */}
-      <div className="flex flex-col h-screen w-full h-1/4 justify-center items-center bg-white-200">
+      <div className="flex flex-col h-screen w-full h-full justify-center items-center bg-white-200">
         <div className="text-center mb-4">
           <h2 className="text-lg font-bold text-black-800">Complete in 3 simple steps</h2>
         </div>
@@ -97,7 +137,6 @@ const LandingPage: React.FC = () => {
             </div>
           </div>
 
-
           <div className="bg-darkPurple p-4 m-4 rounded-lg h-auto w-auto">
             <div className="flex justify-center items-center h-20 w-20 rounded-full overflow-hidden ring-1 ring-white bg-darkPurple">
               <img src="path_to_your_image.jpg" alt="Placeholder" 
@@ -112,7 +151,6 @@ const LandingPage: React.FC = () => {
               </p>
             </div>
           </div>
-
 
           <div className="bg-darkPurple p-4 m-4 rounded-lg h-auto w-auto">
             <div className="flex justify-center items-center h-20 w-20 rounded-full overflow-hidden ring-1 ring-white bg-darkPurple">
