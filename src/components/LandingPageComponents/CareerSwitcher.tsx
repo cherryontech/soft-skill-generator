@@ -1,7 +1,7 @@
 import React from 'react';
 
 interface CareerSwitcherProps {
-  label: string; // Define the type of the 'label' prop
+  label: string;
 }
 
 const CareerSwitcher: React.FC<CareerSwitcherProps> = ({label}) => {

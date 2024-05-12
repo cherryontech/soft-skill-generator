@@ -1,6 +1,7 @@
 import React from 'react';
 import StyledButton from '../components/StyledButton'
 import CareerSwitcher from './LandingPageComponents/CareerSwitcher';
+import SimpleStepsBox from './LandingPageComponents/SimpleStepsBox';
 
 // Order of applying Tailwind CSS Classes:
 // Layout Properties -> Typography -> Background/Borders -> Flexbox & Grid -> Spacing -> Utility Classes
@@ -75,7 +76,7 @@ const LandingPage: React.FC = () => {
 
           {/* checkmark row 3 */}
           <CareerSwitcher label="Career Switcher" />
-          
+
         </div>
       </div>
 
@@ -114,52 +115,28 @@ const LandingPage: React.FC = () => {
         <div className="flex flex-row m-4 justify-between">
 
           {/* Purple Container 1 */}
-          <div className="bg-darkPurple p-4 m-4 rounded-lg h-auto w-auto">
-            <div className="flex justify-center items-center h-20 w-20 rounded-full overflow-hidden ring-1 ring-white bg-darkPurple">
-              <img src="path_to_your_image.jpg" alt="Placeholder" 
-              className="rounded-full object-cover" />
-            </div>
-            <div className="text-white mt-4">
-              <h1>Answer Our Questions</h1>
-            </div>
-            <div className="flex justify-center items-center text-white">
-              <p className="flex justify-center">
-                Answer a series of questions to help us gain a deeper understanding of your background and career goals.
-              </p>
-            </div>
-          </div>
+          <SimpleStepsBox 
+              header="Answer Our Questions"
+              paragraph="Answer a series of questions to help us gain a deeper understanding of your background and career goals."
+              imageUrl="path_to_your_image.jpg"
+              altText="Placeholder image."
+            />
 
           {/* Purple Container 2 */}
-          <div className="bg-darkPurple p-4 m-4 rounded-lg h-auto w-auto">
-            <div className="flex justify-center items-center h-20 w-20 rounded-full overflow-hidden ring-1 ring-white bg-darkPurple">
-              <img src="path_to_your_image.jpg" alt="Placeholder" 
-              className="rounded-full object-cover" />
-            </div>
-            <div className="text-white mt-4">
-              <h1>Share Your Experience</h1>
-            </div>
-            <div className="flex justify-center items-center text-white">
-              <p className="flex justify-center">
-                Share your professional experiences and achievements with us to uncover valuable transferable skills.
-              </p>
-            </div>
-          </div>
+          <SimpleStepsBox
+            header="Share Your Experience"
+            paragraph="Share your professional experiences and achievements with us to uncover valuable transferable skills."
+            imageUrl="path_to_your_image.jpg"
+            altText="Placeholder image."
+            />
 
           {/* Purple Container 3 */}
-          <div className="bg-darkPurple p-4 m-4 rounded-lg h-auto w-auto">
-            <div className="flex justify-center items-center h-20 w-20 rounded-full overflow-hidden ring-1 ring-white bg-darkPurple">
-              <img src="path_to_your_image.jpg" alt="Placeholder" 
-              className="rounded-full object-cover" />
-            </div>
-            <div className="text-white mt-4">
-              <h1>Get Personalized Results</h1>
-            </div>
-            <div className="flex justify-center items-center text-white">
-              <p className="flex justify-center">
-                Receive personalized insights and recommendations tailored to empower your unique career journey.
-              </p>
-            </div>
-          </div>
+          <SimpleStepsBox
+            header="Get Personalized Results"
+            paragraph="Receive personalized insights and recommendations tailored to empower your unique career journey."
+            imageUrl="path_to_your_image.jpg"
+            altText="Placeholder image."
+            />
 
         </div>
 
