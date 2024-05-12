@@ -16,7 +16,7 @@ const SimpleStepsBox: React.FC<SimpleStepsBoxProps> = ({
   circleText,
 }) => {
   return (
-    <div className="relative bg-darkPurple p-5 m-5 rounded-lg h-450 w-auto justify-center items-center">
+    <div className="relative flex flex-col items-center bg-darkPurple p-5 m-5 rounded-lg h-full w-full">
       {/* Small Yellow Circle in the Upper Left Corner */}
       <div
         className="absolute top-1 left-1 transform -translate-x-1/2 -translate-y-1/2"

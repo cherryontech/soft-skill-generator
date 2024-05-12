@@ -2,7 +2,7 @@ import React from 'react';
 import StyledButton from '../components/StyledButton'
 import CareerSwitcher from './LandingPageComponents/CareerSwitcher';
 import SimpleStepsBox from './LandingPageComponents/SimpleStepsBox';
-import ImageWithText from './LandingPageComponents/ImagewithText';
+import ImageWithText from './LandingPageComponents/ImageWithText';
 
 // Order of applying Tailwind CSS Classes:
 // Layout Properties -> Typography -> Background/Borders -> Flexbox & Grid -> Spacing -> Utility Classes
@@ -11,10 +11,10 @@ const LandingPage: React.FC = () => {
   return (
     // body div
     <div className="flex flex-col h-full justify-center bg-white">
-      <h2 className="flex justify-center text-lg font-bold text-black">Unlock Your Potential with EmpowerMe</h2>
+      <h1 className="flex justify-center text-xl font-bold text-black mt-20 mb-5">Unlock Your Potential with EmpowerMe</h1>
 
       {/* Container A: Images & paragraphs */}
-      <div className="flex flex-col bg-white p-4 mb-4 items-start">
+      <div className="flex flex-col justify-center items-center bg-white p-4 mb-4">
 
         {/* Section 1: Identify Your Transferable Skills */}
         <ImageWithText
@@ -36,7 +36,7 @@ const LandingPage: React.FC = () => {
       {/* Container B: Who is it for? */}
       <div className="w-full h-full bg-white flex flex-col">
         <div className="text-center mb-4">
-          <h2 className="text-lg font-bold text-black">Who is it for?</h2>
+          <h1 className="text-lg font-bold text-black">Who is it for?</h1>
         </div>
 
         {/* Column of check marks & career switcher texts */}
@@ -59,9 +59,10 @@ const LandingPage: React.FC = () => {
       </div>
 
       {/* Container C: Quote */}
-      <div className="w-full h-full bg-white flex justify-center items-center">
+      <div className="w-full h-full bg-white flex justify-center items-center mt-10">
         <div className="flex flex-row w-4/5 m-10 border border-gray-300 rounded-md p-4">
           <div className="flex justify-left text-lg text-black m-4">
+            {/* Quotation mark image */}
             <img
               className="h-5 w-10 mr-5"
               src="src/assets/quotation_mark.png"
@@ -78,12 +79,12 @@ const LandingPage: React.FC = () => {
       </div>
 
       {/* Container 4: Complete in 3 simple steps */}
-      <div className="flex flex-col w-full h-full justify-center items-center bg-white">
+      <div className="flex flex-col w-full h-full justify-center items-center mt-10 bg-white">
         <div className="text-center mb-4">
-          <h2 className="text-lg font-bold text-black">Complete in 3 simple steps</h2>
+          <h1 className="text-lg font-bold text-black">Complete in 3 simple steps</h1>
         </div>
 
-        <div className="flex flex-row m-4 justify-between">
+        <div className="flex flex-row w-full m-4 justify-between">
           {/* Purple Container 1 */}
           <SimpleStepsBox 
               header="Answer Our Questions"
