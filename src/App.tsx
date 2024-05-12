@@ -7,8 +7,9 @@ function App() {
 
   return (
     <>
-    <Footer title={logo}/>
     <ScreenerQuestion question='Are you transitioning in a new career?'/>
+
+    <Footer title={logo}/>
     </>
   )
 }

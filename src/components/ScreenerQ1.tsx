@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 
 type QuestionProps = { 
     question: string;
@@ -6,14 +6,18 @@ type QuestionProps = {
 }
 
 const ScreenerQuestion = (props: QuestionProps) => {
+    // const [ step, setStep ] = useState<number>(1) 
     const handelRadioChange =  (event: React.ChangeEvent<HTMLInputElement>) => {
         const value = event.target.value
         console.log('Selected answer:', value)
 }
 
+// const handleNextButton = () => {
+//     setStep(2)
+// }
     return (
        <div>
-            <h4>Step 1 of 2</h4>
+            {/* <h4>Step {step} of 2</h4> */}
             <h1>Let's get to know each other!</h1>
             <h2>{props.question}</h2>
             <div>
