@@ -2,7 +2,7 @@ import React from 'react';
 import StyledButton from '../components/StyledButton'
 import CareerSwitcher from './LandingPageComponents/CareerSwitcher';
 import SimpleStepsBox from './LandingPageComponents/SimpleStepsBox';
-import ImageWithText from '../../src/components/LandingPageComponents/ImageWithText';
+import ImageWithText from '../components/LandingPageComponents/ImageWithText';
 
 // Order of applying Tailwind CSS Classes:
 // Layout Properties -> Typography -> Background/Borders -> Flexbox & Grid -> Spacing -> Utility Classes
