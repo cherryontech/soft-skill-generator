@@ -1,5 +1,6 @@
 import React from 'react';
 import StyledButton from '../components/StyledButton'
+import CareerSwitcher from './LandingPageComponents/CareerSwitcher';
 
 // Order of applying Tailwind CSS Classes:
 // Layout Properties -> Typography -> Background/Borders -> Flexbox & Grid -> Spacing -> Utility Classes
@@ -65,42 +66,16 @@ const LandingPage: React.FC = () => {
         </div>
 
         {/* Column of check marks & career switchers */}
-        <div className="flex flex-col mt-6 ml-10 items-start">
+        <div className="flex flex-col mt-6 ml-10 mr-10">
           {/* checkmark row 1 */}
-          <div className="flex items-center p-2 mb-2">
-            <div className="h-5 w-5">
-              <img 
-                className="bg-yellow p-1 rounded-md"
-                src="src/assets/checkmark.png"
-                alt="a checkmark in a small yellow box"
-              />
-            </div>
-            <div className="text-lg pl-4">Career Switcher</div>
-          </div>
+          <CareerSwitcher label="Career Switcher" />
 
           {/* checkmark row 2 */}
-          <div className="flex items-center p-2 mb-2">
-            <div className="h-5 w-5">
-              <img 
-                className="bg-yellow p-1 rounded-md"
-                src="src/assets/checkmark.png"
-                alt="a checkmark in a small yellow box"
-              />
-            </div>
-            <div className="text-lg pl-4">Career Switcher</div>
-          </div>
+          <CareerSwitcher label="Career Switcher" />
 
           {/* checkmark row 3 */}
-          <div className="flex items-center p-2 mb-2">
-            <div className="h-5 w-5">
-              <img 
-                className="bg-yellow p-1 rounded-md"
-                src="src/assets/checkmark.png"
-                alt="a checkmark in a small yellow box"
-              />
-            </div>
-            <div className="text-lg pl-4">Career Switcher</div>
-          </div>
+          <CareerSwitcher label="Career Switcher" />
+          
         </div>
       </div>
 
@@ -113,12 +88,12 @@ const LandingPage: React.FC = () => {
 
       {/* Container C: Quote */}
       <div className="w-full h-full bg-white flex justify-center items-center">
-        <div className="flex flex-row w-4/5 m-10">
+        <div className="flex flex-row w-4/5 m-10 border border-gray-300 rounded-md p-4">
           <div className="flex justify-left text-lg text-black m-4">
             <img
               className="h-5 w-10 mr-5"
               src="src/assets/quotation_mark.png"
-              alt="the first part of a set of light purple quoation marks"
+              alt="the first part of a set of light purple quotation marks"
               />
             </div>
             <div className="flex text-lg text-black mb-4 mt-6">
@@ -138,6 +113,7 @@ const LandingPage: React.FC = () => {
 
         <div className="flex flex-row m-4 justify-between">
 
+          {/* Purple Container 1 */}
           <div className="bg-darkPurple p-4 m-4 rounded-lg h-auto w-auto">
             <div className="flex justify-center items-center h-20 w-20 rounded-full overflow-hidden ring-1 ring-white bg-darkPurple">
               <img src="path_to_your_image.jpg" alt="Placeholder" 
@@ -153,6 +129,7 @@ const LandingPage: React.FC = () => {
             </div>
           </div>
 
+          {/* Purple Container 2 */}
           <div className="bg-darkPurple p-4 m-4 rounded-lg h-auto w-auto">
             <div className="flex justify-center items-center h-20 w-20 rounded-full overflow-hidden ring-1 ring-white bg-darkPurple">
               <img src="path_to_your_image.jpg" alt="Placeholder" 
@@ -168,6 +145,7 @@ const LandingPage: React.FC = () => {
             </div>
           </div>
 
+          {/* Purple Container 3 */}
           <div className="bg-darkPurple p-4 m-4 rounded-lg h-auto w-auto">
             <div className="flex justify-center items-center h-20 w-20 rounded-full overflow-hidden ring-1 ring-white bg-darkPurple">
               <img src="path_to_your_image.jpg" alt="Placeholder" 
@@ -184,6 +162,7 @@ const LandingPage: React.FC = () => {
           </div>
 
         </div>
+
 
       </div>
     </div>

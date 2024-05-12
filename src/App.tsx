@@ -7,13 +7,10 @@ import logo from '../src/assets/logo.jpg'
 function App() {
   return (
     <>
-      <div className="App">
-        <LandingPage />
-      </div>
-
-      <Footer title={logo}/>
+      <LandingPage />
+      <Footer title={logo} />
     </>
-  )
+  );
 }
 
 export default App
