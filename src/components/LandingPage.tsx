@@ -111,6 +111,12 @@ const LandingPage: React.FC = () => {
             />
         </div>
 
+        <div className="flex justify-center items-center mb-20">
+          <StyledButton>
+            Start Assessment
+          </StyledButton>
+        </div>
+
       </div>
 
     </div>
