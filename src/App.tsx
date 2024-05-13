@@ -8,7 +8,8 @@ function App() {
   return (
     <div className="App">
       {/* <LandingPage /> */}
-      <ScreenerQuestion question='Are you transistion in new career?'/>
+      <ScreenerQuestion question={'Are you transistion in new career?'}/>
+      <ScreenerQuestion question={'Areyou aspiring to pursue a career as software enginnering?'}/>
       <Footer title={logo} />
       
     </div>

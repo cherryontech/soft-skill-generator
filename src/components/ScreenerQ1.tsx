@@ -3,28 +3,31 @@ import StyledButton from '../components/StyledButton'
 
 type QuestionProps = { 
     question: string;
-    answer?: boolean;
 }
 
 const ScreenerQuestion = (props: QuestionProps) => {
-    const [ step, setStep ] = useState<number>(1) 
+    // const [ step, setStep ] = useState<number>(0)
     const handelRadioChange =  (event: React.ChangeEvent<HTMLInputElement>) => {
         const value = event.target.value
         console.log('Selected answer:', value)
-}
+    }
 
-const handleNextButton = () => {
-    setStep(2)
-}
+// const handleNextButton = () => {
+//     if (step < props.questions.length - 1) {
+//         setStep(step + 1)
+//     }else {
+//         console.log('No more questions'); // Or handle completion
+//     }
+// }
     return (
         <main className="h-screen">
             <section className="flex justify-center items-center flex-col">
                 <section>
-                    <h4 className="pt-10">Step {step} of 2</h4>
+                    <h4 className="pt-10">Step 1 of 2</h4>
                     <h1 className="border-b-2 pb-3 font-semibold">Let's get to know each other!</h1>
-                    <h2>{props.question}</h2>
+                    <h2 className="pt-5">{props.question}</h2>
                     <div>
-                        <div>
+                        <div className="pt-1">
                             <input 
                                 type="radio" 
                                 id="yes" 
@@ -34,7 +37,7 @@ const handleNextButton = () => {
                             />
                             <label htmlFor="yes">Yes</label>
                         </div>
-                        <div>
+                        <div className="pt-1 pb-10">
                             <input 
                                 type="radio" 
                                 id="no" 
@@ -46,16 +49,16 @@ const handleNextButton = () => {
                         </div>
                     </div>
                 </section>
-            </section>
-                <section className="flex justify-end px-28">
+            {/* </section> */}
+                <section className="flex justify-end pl-20">
                     <div className="pr-4">
                         <StyledButton children='Cancel' style={`bg-white border-2 border-lightPurple rounded-lg text-black font-semibold leading-6 py-1 px-3`}/>
                     </div>
                     <div>
-                        <StyledButton children='Next' onClick={handleNextButton} style={`bg-lightPurple border-2 border-lightPurple rounded-lg text-black font-semibold leading-6 p-1 px-4`}/>
+                        <StyledButton children='Next' style={`bg-lightPurple border-2 border-lightPurple rounded-lg text-black font-semibold leading-6 p-1 px-4`}/>
                     </div>
                 </section>
-        {/* </section> */}
+        </section>
        </main> 
     ) 
 }
