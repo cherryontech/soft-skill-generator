@@ -1,4 +1,5 @@
-import React, { useState } from "react"
+import React from "react"
+import { useNavigate } from "react-router-dom"
 import StyledButton from '../components/StyledButton'
 
 type QuestionProps = { 
@@ -6,19 +7,19 @@ type QuestionProps = {
 }
 
 const ScreenerQuestion = (props: QuestionProps) => {
-    // const [ step, setStep ] = useState<number>(0)
+    const navigate = useNavigate()
     const handelRadioChange =  (event: React.ChangeEvent<HTMLInputElement>) => {
         const value = event.target.value
         console.log('Selected answer:', value)
     }
 
-// const handleNextButton = () => {
-//     if (step < props.questions.length - 1) {
-//         setStep(step + 1)
-//     }else {
-//         console.log('No more questions'); // Or handle completion
-//     }
-// }
+const handleNextButton = () => {
+    navigate('/screenerquestion2')
+}
+
+const handleCancelButton = () => {
+    navigate('/')
+}
     return (
         <main className="h-screen">
             <section className="flex justify-center items-center flex-col">
@@ -27,7 +28,7 @@ const ScreenerQuestion = (props: QuestionProps) => {
                     <h1 className="border-b-2 pb-3 font-semibold">Let's get to know each other!</h1>
                     <h2 className="pt-5">{props.question}</h2>
                     <div>
-                        <div className="pt-1">
+                        <div className="pt-6">
                             <input 
                                 type="radio" 
                                 id="yes" 
@@ -35,7 +36,7 @@ const ScreenerQuestion = (props: QuestionProps) => {
                                 value="Yes"
                                 onChange={handelRadioChange}
                             />
-                            <label htmlFor="yes">Yes</label>
+                            <label className="pl-2" htmlFor="yes">Yes</label>
                         </div>
                         <div className="pt-1 pb-10">
                             <input 
@@ -45,17 +46,17 @@ const ScreenerQuestion = (props: QuestionProps) => {
                                 value="No"
                                 onChange={handelRadioChange}
                             />
-                            <label htmlFor="no">No</label>
+                            <label className="pl-2" htmlFor="no">No</label>
                         </div>
                     </div>
                 </section>
             {/* </section> */}
                 <section className="flex justify-end pl-20">
                     <div className="pr-4">
-                        <StyledButton children='Cancel' style={`bg-white border-2 border-lightPurple rounded-lg text-black font-semibold leading-6 py-1 px-3`}/>
+                        <StyledButton children='Cancel' onClick={handleCancelButton} style={`bg-white border-2 border-lightPurple rounded-lg text-black font-semibold leading-6 py-1 px-3`}/>
                     </div>
                     <div>
-                        <StyledButton children='Next' style={`bg-lightPurple border-2 border-lightPurple rounded-lg text-black font-semibold leading-6 p-1 px-4`}/>
+                        <StyledButton children='Next' onClick={handleNextButton} style={`bg-lightPurple border-2 border-lightPurple rounded-lg text-black font-semibold leading-6 p-1 px-4`}/>
                     </div>
                 </section>
         </section>
