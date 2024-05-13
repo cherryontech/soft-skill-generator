@@ -1,15 +1,18 @@
 import './App.css'
-import LandingPage from './components/LandingPage'
+// import LandingPage from './components/LandingPage'
 import Footer from '../src/components/Footer'
 import logo from '../src/assets/logo.jpg'
 import ScreenerQuestion from './components/ScreenerQ1'
 
 function App() {
   return (
-    <>
-    <Footer title={logo}/>
-    </>
-  )
+    <div className="App">
+      {/* <LandingPage /> */}
+      <ScreenerQuestion question='Are you transistion in new career?'/>
+      <Footer title={logo} />
+      
+    </div>
+  );
 }
 
 export default App
