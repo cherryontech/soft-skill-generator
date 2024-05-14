@@ -12,6 +12,9 @@ export default {
         darkPurple: '#4e2973', //dark purple
         white: '#f2f2f2', //white
         black: '#0d0d0d', //black
+      },
+      screens: {
+        'mobile': '320px-767px', 
       }
     },
   },
