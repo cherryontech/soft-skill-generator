@@ -21,16 +21,15 @@ const handleCancelButton = () => {
     navigate('/')
 }
     return (
-        <main className="h-screen mx-7 md:mx-36">
-            <section className="flex flex-col justify-center items-center md:items-start">
-                <section>
-                    <h4 className="pt-10 md:pt-16">Step 1 of 2</h4>
-                    <div className=" w-56">
-                        <h1 className="border-b-2 pb-3 md:pb-4 font-semibold">Let's get to know each other!</h1>
+        <main className="h-screen mx-7 md:mx-36 xl:mx-marginXl">
+            <section className="flex flex-col justify-center md:items-start">
+                    <p className="pt-10 md:pt-16 xl:pt-84 xl:pb-3.5">Step 1 of 2</p>
+                    <div className="w-56 border-b-2 md:w-full">
+                        <h3 className=" pb-3 font-semibold leading-9 text-base md:pb-4 md:text-3xl xl:text-txt32 xl:pb-23">Let's get to know each other!</h3>
                     </div>
-                    <h2 className="pt-5 md:pt-7">{props.question}</h2>
+                    <h4 className="pt-5 leading-9 text-base md:text-txt28 font-normal md:pt-7 xl:pt-42">{props.question}</h4>
                     <div>
-                        <div className="pt-4 md:pt-6">
+                        <div className="pt-5px md:pt-3 xl:pt-22">
                             <input 
                                 type="radio" 
                                 id="yes" 
@@ -38,38 +37,29 @@ const handleCancelButton = () => {
                                 value="Yes"
                                 onChange={handelRadioChange}
                             />
-                            <label className="pl-2" htmlFor="yes">Yes</label>
+                            <label className="pl-3.5 text-xs font-normal md:text-base xl:text-xl" htmlFor="yes">Yes</label>
                         </div>
-                        <div className="pt-1 pb-10">
+                        <div className="pt-1 xl:pt-11px pb-10">
                             <input 
+                                className="text-xs font-normal xl:text-xl"
                                 type="radio" 
                                 id="no" 
                                 name="answer" 
                                 value="No"
                                 onChange={handelRadioChange}
                             />
-                            <label className="pl-2" htmlFor="no">No</label>
+                            <label className="pl-3.5 text-xs font-normal md:text-base xl:text-xl" htmlFor="no">No</label>
                         </div>
                     </div>
-                </section>
-                <section className="flex justify-end pl-20 md:hidden">
-                    <div className="pr-4">
-                        <StyledButton children='Cancel' onClick={handleCancelButton} style={`bg-white border-2 border-lightPurple rounded-lg text-black font-semibold leading-6 py-1 px-3`}/>
-                    </div>
-                    <div>
-                        <StyledButton children='Next' onClick={handleNextButton} style={`bg-lightPurple border-2 border-lightPurple rounded-lg text-black font-semibold leading-6 p-1 px-4`}/>
-                    </div>
-                </section>
             </section>
-            <section className="hidden md:flex justify-end">
-                <div className="pr-4">
-                    <StyledButton children='Cancel' onClick={handleCancelButton} style={`bg-white border-2 border-lightPurple rounded-lg text-black font-semibold leading-6 py-1 px-3`}/>
+            <section className="flex justify-end">
+                <div className="pr-6">
+                    <StyledButton children='Cancel' onClick={handleCancelButton} style={`bg-white border-2 border-lightPurple rounded-lg text-black text-xs md:text-base xl:text-xl font-normal leading-6 py-1.5 px-5 md:py-2 md:px-7`}/>
                 </div>
                 <div>
-                    <StyledButton children='Next' onClick={handleNextButton} style={`bg-lightPurple border-2 border-lightPurple rounded-lg text-black font-semibold leading-6 p-1 px-4`}/>
+                    <StyledButton children='Next' onClick={handleNextButton} style={`bg-lightPurple border-2 border-lightPurple rounded-lg text-black text-xs md:text-base xl:text-xl font-normal leading-6 p-1.5 px-5 md:py-2 md:px-7`}/>
                 </div>
             </section>
-        {/* </section> */}
        </main> 
     ) 
 }
