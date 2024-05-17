@@ -27,11 +27,11 @@ export default {
         regular:'400'
       },
       colors: {
-        yellow:'#eef26d',
-        lightpurple:'#b796d9',
-        darkpurple:'#4e2973',
-        white:'#f2f2f2',
-        black:'#0d0d0d'
+        yellow: '#eef26d',
+        lightPurple: '#b796d9',
+        darkPurple: '#4e2973',
+        white: '#f2f2f2',
+        black: '#0d0d0'
       },
     },
   },
