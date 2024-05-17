@@ -1,8 +1,9 @@
 import React from 'react';
-import StyledButton from '../components/StyledButton'
+import StyledButton from './StyledButton';
 import CareerSwitcher from './CareerSwitcher';
 import SimpleStepsBox from './SimpleStepsBox';
 import ImageWithText from './ImageWithText';
+import Header from './Header';
 
 // Order of applying Tailwind CSS Classes:
 // Layout Properties -> Typography -> Background/Borders -> Flexbox & Grid -> Spacing -> Utility Classes
@@ -10,6 +11,8 @@ import ImageWithText from './ImageWithText';
 const LandingPage: React.FC = () => {
   return (
     // body div
+      <>
+      <Header />
     <div className="flex flex-col h-full justify-center bg-white">
       <h1 className="flex justify-center text-xl font-bold text-black mt-20 mb-5">Unlock Your Potential with EmpowerMe</h1>
 
@@ -120,6 +123,7 @@ const LandingPage: React.FC = () => {
       </div>
 
     </div>
+    </>
   );
 };
 

@@ -1,21 +1,24 @@
 import './App.css'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import LandingPage from './components/LandingPage'
-// import Footer from '../src/components/Footer'
-// import logo from '../src/assets/logo.jpg'
-import PageFooter from './components/PageFooter'
-import ScreenerQuestion from './components/ScreenerQ1'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import logo from '../src/assets/logo.jpg'
+import PageFooter from './components/PageFooter';
+import Navbar from './components/Navbar';
+import ScreenerQuestion from './components/ScreenerQ1';
 
 function App() {
   return (
+  <>
     <BrowserRouter>
       <Routes>
+        <Route path='/' element={ <Navbar title={logo}/> }/>
         <Route path='/' element={<LandingPage/>}/>
         <Route path='/screenerquestion1' element={<ScreenerQuestion question={'Are you transistioning in a new career?'}/>}/>
         <Route path='/screenerquestion2' element={<ScreenerQuestion question={'Are you aspiring to pursue a career as software enginner?'}/>}/>
       </Routes>
-    <PageFooter />
-  </BrowserRouter>
+      <PageFooter />
+    </BrowserRouter>
+  </>
   );
 }
 
