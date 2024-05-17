@@ -7,9 +7,13 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}"
   ],
   theme: {
+      borderRadius: {
+        full: '9999px',
+        lg: '0.5rem',
+      },
     extend: {
       fontFamily: {
-        "inter": ['inter'],
+        DEFAULT: 'inter',
         // , ...defaultTheme.fontFamily.sans
       },
       fontSize: {
@@ -21,7 +25,7 @@ export default {
       fontWeight: {
         'normal': '400',
         'semibold': '600',
-        'bold': '700',
+        'bold': '900',
       },
       lineHeight: {
         78: '78px',
