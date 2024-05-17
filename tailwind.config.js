@@ -10,6 +10,7 @@ export default {
       borderRadius: {
         full: '9999px',
         lg: '0.5rem',
+        20: '1.25rem', //20px
       },
     extend: {
       fontFamily: {
