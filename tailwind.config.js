@@ -38,13 +38,15 @@ export default {
         txt32: '2rem', //32px
       },
       margin: {
-        marginXl: '22.125rem' //354px
+        marginXl: '22.125rem', //354px
+        26: '1.625rem', //26px
       },
       padding: {
         '5px': '0.313rem', //5px
         '11px': '0.688rem', //11px
-        23: '1.438rem', //23px
         22: '1.375rem', //22px
+        23: '1.438rem', //23px
+        30: '1.875rem', //30px
         42: '2.625rem', //42px
         84: '5.25rem', //84px
       }

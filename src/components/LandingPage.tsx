@@ -11,13 +11,17 @@ import Header from './Header';
 const LandingPage: React.FC = () => {
   return (
     // body div
-      <>
-      <Header />
+    <>
+    {/* <Header /> */}
     <div className="flex flex-col h-full justify-center bg-white">
-      <h1 className="flex justify-center text-xl font-bold text-black mt-20 mb-5">Unlock Your Potential with EmpowerMe</h1>
-
+      {/* <h1 className="flex justify-center text-xl font-bold text-black mt-20 mb-5">Unlock Your Potential with EmpowerMe</h1> */}
+      <div className='flex justify-center items-center'>
+        <h1 className="text-2xl font-bold text-black my-26 block text-center">Unlock Your Potential with <br/>
+        <span className="block text-center">EmpowerMe</span>
+        </h1>
+      </div>
       {/* Container A: Images & paragraphs */}
-      <div className="flex flex-col justify-center items-center bg-white p-4 mb-4">
+      <div className="flex flex-col justify-center items-center bg-white px-6 pb-6 mb-4">
 
         {/* Section 1: Identify Your Transferable Skills */}
         <ImageWithText
@@ -38,7 +42,7 @@ const LandingPage: React.FC = () => {
 
       {/* Container B: Who is it for? */}
       <div className="w-full h-full bg-white flex flex-col">
-        <div className="text-center mb-4">
+        <div className="text-center">
           <h1 className="text-lg font-bold text-black">Who is it for?</h1>
         </div>
 
@@ -63,8 +67,8 @@ const LandingPage: React.FC = () => {
 
       {/* Container C: Quote */}
       <div className="w-full h-full bg-white flex justify-center items-center mt-10">
-        <div className="flex flex-row w-4/5 m-10 border border-gray-300 rounded-md p-4">
-          <div className="flex justify-left text-lg text-black m-4">
+        <div className="flex flex-row w-4/5 mx-6 border border-gray-300 rounded-md p-4">
+          <div className="flex justify-left text-lg text-black mx-4">
             {/* Quotation mark image */}
             <img
               className="h-5 w-10 mr-5"
@@ -87,7 +91,7 @@ const LandingPage: React.FC = () => {
           <h1 className="text-lg font-bold text-black">Complete in 3 simple steps</h1>
         </div>
 
-        <div className="flex flex-row w-full m-4 justify-between">
+        <div className="flex flex-col md:flex-row w-9/12 justify-between">
           {/* Purple Container 1 */}
           <SimpleStepsBox 
               header="Answer Our Questions"
