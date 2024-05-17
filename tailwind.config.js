@@ -1,10 +1,16 @@
 /** @type {import('tailwindcss').Config} */
+// const defaultTheme = require('tailwindcss/defaultTheme');
+
 export default {
   content: [
     ".index.html",
     "./src/**/*.{js,ts,jsx,tsx}"
   ],
   theme: {
+      borderRadius: {
+        full: '9999px',
+        lg: '0.5rem',
+      },
     extend: {
       fontFamily: {
         inter:['inter']
