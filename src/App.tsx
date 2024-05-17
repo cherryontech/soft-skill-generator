@@ -1,19 +1,21 @@
 import './App.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Header from './Components/Header';
 import Navbar from './Components/Navbar';
+import LandingPage from './Components/LandingPage';
+import Footer from './Components/Footer';
+import logo from '../src/assets/logo.jpg';
 
 
 function App() {
-/*Browserroute should encompass all elements of this return statement*/
-/*Logo will have a path back to landing page that is everpresent*/
   return (
     <>
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={ <Navbar/> }/>
+        <Route path='/' element={ <Navbar title={logo}/> }/>
+        <Route path='/' element={<LandingPage/>}/>
       </Routes>
-      < Header/>
+
+      <Footer title={logo} />
     </BrowserRouter>
     </>
   )

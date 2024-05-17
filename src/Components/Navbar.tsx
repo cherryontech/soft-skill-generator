@@ -1,13 +1,13 @@
 import { Link } from 'react-router-dom';
-import logo from '/src/assets/logo.jpeg'
+type NavbarProps = { title: string }
 
-function Navbar() {
+function Navbar({ title }: NavbarProps) {
     return(
     <>
         <div className='bg-yellow flex row'>
         {/* Logo as a clickable Link */}
             <Link to="/">
-            <img src={logo} alt="Logo" />
+            <img src={title} alt="logo" />
             </Link>
         </div>
       </>
