@@ -13,34 +13,25 @@ export default {
       },
     extend: {
       fontFamily: {
-        DEFAULT: 'inter',
-        // , ...defaultTheme.fontFamily.sans
+        inter:['inter']
       },
       fontSize: {
-        52: '52px',
-        48: '48px',
-        32: '32px',
-        20: '20px',
+        52:'52px',
+        48:'48px',
+        32:'32px',
+        20:'20px'
       },
       fontWeight: {
-        'normal': '400',
-        'semibold': '600',
-        'bold': '900',
-      },
-      lineHeight: {
-        78: '78px',
-        72: '72px',
-        48: '48px',
-        36: '36px',
-        32: '32px',
-        24: '24px',
+        bold:'700',
+        semibold:'600',
+        regular:'400'
       },
       colors: {
-        yellow: '#eef26d',
-        lightpurple: '#b796d9',
-        darkpurple: '#4e2973',
-        white: '#f2f2f2',
-        black: '#0d0d0'
+        yellow:'#eef26d',
+        lightpurple:'#b796d9',
+        darkpurple:'#4e2973',
+        white:'#f2f2f2',
+        black:'#0d0d0d'
       },
     },
   },
