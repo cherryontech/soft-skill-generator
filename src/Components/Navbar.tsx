@@ -7,7 +7,7 @@ function Navbar({ title }: NavbarProps) {
         <div className='bg-yellow flex row'>
         {/* Logo as a clickable Link */}
             <Link to="/">
-            <img src={title} alt="logo" />
+                <img src={title} alt="logo" />
             </Link>
         </div>
       </>
