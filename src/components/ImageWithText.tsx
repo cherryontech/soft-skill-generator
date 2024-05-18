@@ -9,7 +9,7 @@ interface ImageWithTextProps {
 
 const ImageWithText: React.FC<ImageWithTextProps> = ({ imageUrl, altText, header, paragraph }) => {
   return (
-    <div className="md:w-full md:max-w-screen-lg flex flex-col md:flex-row items-center mb-4">
+    <div className="md:w-full md:max-w-screen-lg flex flex-col xl:flex-row items-center mb-4">
       {/* Left side: Image */}
       <div className='flex justify-center'>
         <img
@@ -21,7 +21,7 @@ const ImageWithText: React.FC<ImageWithTextProps> = ({ imageUrl, altText, header
       {/* Right side: Header and Paragraph */}
       <div className="flex flex-col justify-center items-center">
         <h2 className="text-xl font-semibold text-black mb-2 text-center mt-3.5">{header}</h2>
-        <p className="text-xs text-black mb-4 text-center">{paragraph}</p>
+        <p className="text-xs text-black mb-4 text-center md:w-6/12">{paragraph}</p>
       </div>
     </div>
   );

@@ -41,6 +41,10 @@ export default {
       margin: {
         marginXl: '22.125rem', //354px
         26: '1.625rem', //26px
+        30: '1.875rem', //30px
+        50: '3.125rem', //50px
+        70: '4.375rem', //70px
+        150: '9.375rem', //150px
       },
       padding: {
         '5px': '0.313rem', //5px
