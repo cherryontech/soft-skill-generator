@@ -13,7 +13,6 @@ const ImageWithText: React.FC<ImageWithTextProps> = ({ imageUrl, altText, header
       {/* Left side: Image */}
       <div className='flex justify-center'>
         <img
-          // className="w-4/6 rounded-20 flex-1 max-w-xs h-32 object-cover"
           className="rounded-20 flex-1 max-w-xs h-28 md:h-32 xl:h-52 object-cover"
           src={imageUrl}
           alt={altText}
