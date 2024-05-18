@@ -12,10 +12,10 @@ const LandingPage: React.FC = () => {
   return (
     // body div
     <>
-    {/* <Header /> */}
+    <Header />
     <div className="flex flex-col h-full justify-center bg-white">
       <div className='flex justify-center items-center'>
-        <h1 className="text-2xl font-bold text-black my-26 mx-2 md:mt-70 block text-center">Unlock Your Potential with EmpowerMe</h1>
+        <h1 className="text-2xl font-bold text-black my-26 mx-2 md:mt-70 block text-center xl:text-5xl">Unlock Your Potential with EmpowerMe</h1>
       </div>
       {/* Container A: Images & paragraphs */}
       <div className="flex flex-col justify-center items-center bg-white px-6 pb-6 mb-4">
@@ -40,7 +40,7 @@ const LandingPage: React.FC = () => {
       {/* Container B: Who is it for? */}
       <div className="w-full h-full bg-white flex flex-col">
         <div className="text-center">
-          <h1 className="text-lg font-bold text-black">Who is it for?</h1>
+          <h1 className="text-lg font-bold text-black md:text-2xl xl:text-5xl">Who is it for?</h1>
         </div>
 
         {/* Column of check marks & career switcher texts */}
@@ -56,7 +56,7 @@ const LandingPage: React.FC = () => {
       </div>
 
       {/* Container B.5 - Start Assessment Button  */}
-      <div className="hidden xl:flex xl:justify-center xl:items-center">
+      <div className="flex justify-center items-center mt-5">
         <StyledButton style={`bg-lightPurple rounded-lg px-4 py-2.5 text-black text-lg font-semibold leading-6`}>
           Start Assessment
         </StyledButton>
@@ -64,8 +64,8 @@ const LandingPage: React.FC = () => {
 
       {/* Container C: Quote */}
       <div className="w-full h-full bg-white flex justify-center items-center mt-10 md:mt-24">
-        <div className="flex flex-row w-4/5 mx-6 md:mx-0 border border-gray-300 rounded-md p-4">
-          <div className="flex justify-left text-lg text-black mr-4 md:mr-0">
+        <div className="flex flex-row w-4/5 mx-6 md:mx-0 border border-gray-300 rounded-md p-4 xl:px-14 xl:py-8 xl:justify-center">
+          <div className="flex justify-left text-lg text-black mr-2 md:mr-0 xl:mr-6">
             {/* Quotation mark image */}
             <img
               className="h-5 w-10 mr-5"
@@ -74,7 +74,7 @@ const LandingPage: React.FC = () => {
               />
           </div>
             <div className="flex text-lg text-black mb-4 mt-6">
-              <p className='text-center'>
+              <p className='text-center text-base xl:text-2xl'>
                 EmpowerMe is completely free because we believe everyone deserves a fair chance in this field. 
                 Let's level the playing field together and make it effortless to harness and showcase your transferable skills in the tech industry.
               </p>
@@ -83,12 +83,12 @@ const LandingPage: React.FC = () => {
       </div>
 
       {/* Container 4: Complete in 3 simple steps */}
-      <div className="flex flex-col w-full h-full justify-center items-center mt-10 md:mt-24 mb-50 md:mb-70 bg-white">
+      <div className="flex flex-col w-full h-full justify-center items-center mt-10 md:mt-24 mb-50 md:mb-70 xl:mb-100 bg-white">
         <div className="text-center mb-1.5">
-          <h1 className="text-lg font-bold text-black">Complete in 3 simple steps</h1>
+          <h2 className="text-xl md:text-txt40 font-semibold text-black xl:text-5xl">Complete in 3 simple steps</h2>
         </div>
 
-        <div className="flex flex-col xl:flex-row w-9/12 md:w-2/6 justify-between">
+        <div className="flex flex-col xl:flex-row w-60 md:w-72 xl:w-11/12 justify-between">
           {/* Purple Container 1 */}
           <SimpleStepsBox 
               header="Answer Our Questions"
@@ -99,6 +99,7 @@ const LandingPage: React.FC = () => {
             />
           {/* Purple Container 2 */}
           <SimpleStepsBox
+            className="xl:mx-6"
             header="Share Your Experience"
             paragraph="Share your professional experiences and achievements with us to uncover valuable transferable skills."
             imageUrl="path_to_your_image.jpg"
@@ -115,7 +116,7 @@ const LandingPage: React.FC = () => {
             />
         </div>
 
-        <div className="hidden xl:flex xl:justify-center xl:items-center xl:mb-20">
+        <div className="flex justify-center items-center mt-5">
           <StyledButton style={`bg-lightPurple rounded-lg px-4 py-2.5 text-black text-lg font-semibold leading-6`}>
             Start Assessment
           </StyledButton>
