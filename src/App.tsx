@@ -14,7 +14,7 @@ function App() {
       <Routes>
         <Route path='/' element={<LandingPage/>}/>
         <Route path='/screenerquestion1' element={<ScreenerQuestion question={'Are you transitioning in a new career?'}/>}/>
-        <Route path='/screenerquestion2' element={<ScreenerQuestion question={'Are you aspiring to pursue a career as software enginner?'}/>}/>
+        <Route path='/screenerquestion2' element={<ScreenerQuestion question={'Are you aspiring to pursue a career as a software engineer?'}/>}/>
       </Routes>
       <PageFooter />
     </BrowserRouter>
