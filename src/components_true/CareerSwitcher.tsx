@@ -10,7 +10,7 @@ const CareerSwitcher: React.FC<CareerSwitcherProps> = ({label}) => {
       <div className="h-5 w-5 xl:h-7 xl:w-7">
         <img 
           className="bg-yellow p-1 rounded-md"
-          src="src/assets/checkmark.jpg"
+          src="src/assets/checkmark.png"
           alt="a checkmark in a small yellow box"
         />
       </div>
