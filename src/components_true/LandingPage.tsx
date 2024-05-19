@@ -7,6 +7,7 @@ import Header from './Header';
 
 import identify_your_transferable_skills from '../assets/identify_your_transerable_skills.png';
 import confidently_communicate_your_skills from '../assets/confidently_communicate_skills.png';
+import quotation_mark from '../assets/quotation_mark.png'
 
 // Order of applying Tailwind CSS Classes:
 // Layout Properties -> Typography -> Background/Borders -> Flexbox & Grid -> Spacing -> Utility Classes
@@ -72,7 +73,7 @@ const LandingPage: React.FC = () => {
             {/* Quotation mark image */}
             <img
               className="h-5 w-10 mr-5"
-              src="src/assets/quotation_mark.png"
+              src={quotation_mark}
               alt="the first part of a set of light purple quotation marks"
               />
           </div>
