@@ -5,6 +5,10 @@ import SimpleStepsBox from './SimpleStepsBox';
 import ImageWithText from './ImageWithText';
 import Header from './Header';
 
+import identify_your_transferable_skills from '../assets/identify_your_transerable_skills.png';
+import confidently_communicate_your_skills from '../assets/confidently_communicate_skills.png';
+import quotation_mark from '../assets/quotation_mark.png'
+
 // Order of applying Tailwind CSS Classes:
 // Layout Properties -> Typography -> Background/Borders -> Flexbox & Grid -> Spacing -> Utility Classes
 
@@ -22,14 +26,14 @@ const LandingPage: React.FC = () => {
 
         {/* Section 1: Identify Your Transferable Skills */}
         <ImageWithText
-          imageUrl="src/assets/overcoming_imposter_syndrome.png"
+          imageUrl={identify_your_transferable_skills}
           altText="The silhouette of a person standing between two mountains in near dark as the sun begins to peek over the horizon behind them."
           header="Identify Your Transferable Skills"
           paragraph="Discover the skills that bridge the gap between your current role and your desired career path. Transferable skills are the key to transitioning successfully into a new field."
         />
         {/* Section 2: Confidently Communicate Your Skills */}
         <ImageWithText
-          imageUrl="src/assets/identify_transferable_skills.png"
+          imageUrl={confidently_communicate_your_skills}
           altText="A person in orange headphones sits in a chair with chin resting in hand, scrawling in a notebook & concentrating."
           header="Confidently Communicate Your Skills"
           paragraph="Overcome self-doubt and insecurity by learning how to effectively communicate your achievements and capabilities. EmpowerMe helps you articulate your value with clarity and confidence."
@@ -69,7 +73,7 @@ const LandingPage: React.FC = () => {
             {/* Quotation mark image */}
             <img
               className="h-5 w-10 mr-5"
-              src="src/assets/quotation_mark.png"
+              src={quotation_mark}
               alt="the first part of a set of light purple quotation marks"
               />
           </div>
