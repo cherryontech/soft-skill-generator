@@ -56,7 +56,7 @@ const LandingPage: React.FC = () => {
 
       {/* Container B.5 - Start Assessment Button  */}
       <div className="flex justify-center items-center">
-        <StyledButton>
+        <StyledButton style={`bg-lightPurple rounded-lg px-4 py-2.5 text-black text-lg font-semibold leading-6`}>
           Start Assessment
         </StyledButton>
       </div>
@@ -115,7 +115,7 @@ const LandingPage: React.FC = () => {
         </div>
 
         <div className="flex justify-center items-center mb-20">
-          <StyledButton>
+          <StyledButton style={`bg-lightPurple rounded-lg px-4 py-2.5 text-black text-lg font-semibold leading-6`}>
             Start Assessment
           </StyledButton>
         </div>
