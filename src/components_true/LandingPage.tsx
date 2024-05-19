@@ -22,14 +22,14 @@ const LandingPage: React.FC = () => {
 
         {/* Section 1: Identify Your Transferable Skills */}
         <ImageWithText
-          imageUrl="src/assets/overcoming_imposter_syndrome.jpg"
+          imageUrl="src/assets/identify_your_transferable_skills.jpg"
           altText="The silhouette of a person standing between two mountains in near dark as the sun begins to peek over the horizon behind them."
           header="Identify Your Transferable Skills"
           paragraph="Discover the skills that bridge the gap between your current role and your desired career path. Transferable skills are the key to transitioning successfully into a new field."
         />
         {/* Section 2: Confidently Communicate Your Skills */}
         <ImageWithText
-          imageUrl="src/assets/identify_transferable_skills_test.jpg"
+          imageUrl="src/assets/confidently_communicate_skills.jpg"
           altText="A person in orange headphones sits in a chair with chin resting in hand, scrawling in a notebook & concentrating."
           header="Confidently Communicate Your Skills"
           paragraph="Overcome self-doubt and insecurity by learning how to effectively communicate your achievements and capabilities. EmpowerMe helps you articulate your value with clarity and confidence."
