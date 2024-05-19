@@ -29,7 +29,7 @@ const LandingPage: React.FC = () => {
         />
         {/* Section 2: Confidently Communicate Your Skills */}
         <ImageWithText
-          imageUrl="src/assets/identify_transferable_skills.jpg"
+          imageUrl="src/assets/identify_transferable_skills_test.jpg"
           altText="A person in orange headphones sits in a chair with chin resting in hand, scrawling in a notebook & concentrating."
           header="Confidently Communicate Your Skills"
           paragraph="Overcome self-doubt and insecurity by learning how to effectively communicate your achievements and capabilities. EmpowerMe helps you articulate your value with clarity and confidence."
