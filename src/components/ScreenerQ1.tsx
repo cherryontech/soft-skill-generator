@@ -1,6 +1,6 @@
 import React from "react"
 import { useNavigate } from "react-router-dom"
-import StyledButton from '../components/StyledButton'
+import StyledButton from "./StyledButton";
 
 type QuestionProps = { 
     question: string;

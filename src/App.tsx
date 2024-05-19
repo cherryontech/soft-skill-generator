@@ -1,10 +1,10 @@
 import './App.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import LandingPage from './components/LandingPage'
+import LandingPage from './Components/LandingPage'
 import logo from '../src/assets/logo.jpg'
-import PageFooter from './components/PageFooter';
-import Navbar from './components/Navbar';
-import ScreenerQuestion from './components/ScreenerQ1';
+import PageFooter from './Components/PageFooter';
+import Navbar from './Components/Navbar';
+import ScreenerQuestion from './Components/ScreenerQ1';
 
 function App() {
   return (
