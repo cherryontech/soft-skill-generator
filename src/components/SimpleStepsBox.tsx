@@ -6,6 +6,7 @@ interface SimpleStepsBoxProps {
   imageUrl: string;
   altText: string;
   circleText: string; // single character to be displayed inside the circle
+  className?: string;
 }
 
 const SimpleStepsBox: React.FC<SimpleStepsBoxProps> = ({
@@ -14,9 +15,10 @@ const SimpleStepsBox: React.FC<SimpleStepsBoxProps> = ({
   imageUrl,
   altText,
   circleText,
+  className = ''
 }) => {
   return (
-    <div className="relative flex flex-col items-center bg-darkPurple p-5 m-5 rounded-lg h-auto w-full">
+    <div className={`relative flex flex-col items-center bg-darkPurple mt-5 md:mt-30 p-30 rounded-lg h-auto w-full ${className}`}>
       {/* Small Yellow Circle in the Upper Left Corner */}
       <div
         className="absolute top-1 left-1 transform -translate-x-1/2 -translate-y-1/2"
@@ -40,10 +42,10 @@ const SimpleStepsBox: React.FC<SimpleStepsBoxProps> = ({
 
       {/* Content */}
       <div className="text-white mt-5 mb-2">
-        <h1>{header}</h1>
+        <h4 className='text-base md:text-xl xl:text-txt28'>{header}</h4>
       </div>
       <div className="flex justify-center items-center text-white">
-        <p className="flex justify-center">{paragraph}</p>
+        <p className="flex justify-center text-xs md:text-base xl:text-lg">{paragraph}</p>
       </div>
     </div>
   );
