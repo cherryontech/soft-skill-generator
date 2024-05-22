@@ -14,7 +14,7 @@ export default {
       },
     extend: {
       fontFamily: {
-        inter:['inter']
+        inter:['inter', 'Avenir', 'Helvetica', 'Arial', 'sans-serif']
       },
       fontSize: {
         52:'52px',
