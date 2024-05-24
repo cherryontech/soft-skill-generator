@@ -1,20 +1,39 @@
-import React from "react"
+import React, { useState }from "react"
 import { useNavigate } from "react-router-dom"
 import StyledButton from "./StyledButton";
+import ScreenerPopup from "./ScreenerPopUp";
+
 
 type QuestionProps = { 
     question: string;
 }
 
 const ScreenerQuestion = (props: QuestionProps) => {
+    const [showPopup, setShowPopup] = useState(false);
     const navigate = useNavigate()
+
     const handelRadioChange =  (event: React.ChangeEvent<HTMLInputElement>) => {
         const value = event.target.value
+        showPopup;
         console.log('Selected answer:', value)
     }
+const closePopup = () =>{
+    setShowPopup(false);
+};
+
+const handlePopupContinue = () => {
+    navigate('/')
+}
+//handleContinue is an onClick for the 'continue' button and moves on to next section, currently sends home
+//until next section is ready
+
+const handlePopupCancel = () => {
+    navigate('/')
+}
 
 const handleNextButton = () => {
-    navigate('/screenerquestion2')
+    setShowPopup(true);
+    console.log('next clicked')
 }
 
 const handleCancelButton = () => {
@@ -60,6 +79,13 @@ const handleCancelButton = () => {
                     <StyledButton children='Next' onClick={handleNextButton} style={`bg-lightPurple border-2 border-lightPurple rounded-lg text-black text-xs md:text-base xl:text-xl font-normal leading-6 p-1.5 px-5 md:py-2 md:px-7`}/>
                 </div>
             </section>
+                {showPopup && (
+                    <ScreenerPopup message="This app is not for you"
+                        onClose={closePopup}
+                        onClick={handlePopupContinue}
+                        onCancel={handlePopupCancel}
+                    />
+                )}
        </main> 
     ) 
 }
