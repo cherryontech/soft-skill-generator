@@ -8,7 +8,7 @@ type QuestionProps = {
     question: string;
 }
 
-const ScreenerQuestion = (props: QuestionProps) => {
+const ScreenerQuestion2 = (props: QuestionProps) => {
     const [showPopup, setShowPopup] = useState(false);
     const [ selectedAnswer, setSelectedAnswer ] = useState<string | null>(null)
     const navigate = useNavigate()
@@ -24,12 +24,12 @@ const handleNextButton = () => {
         setShowPopup(true);
         console.log('next clicked')
     } else {
-        navigate('/screenerquestion2')
+        navigate('/') //this will navigate to the skill questions
     }
 }
 
-const handleCancelButton = () => {
-    navigate('/')
+const handleBackButton = () => {
+    navigate('/screenerquestion1')
 }
 
 const closePopup = () => {
@@ -38,10 +38,8 @@ const closePopup = () => {
 
 const handlePopupContinue = () => {
     setShowPopup(false);
-    navigate('/screenerquestion2')
+    navigate('/') //navigate back to home page for now this will be navigate to the skill questions
 }
-//handleContinue is an onClick for the 'continue' button and moves on to next section, currently sends home
-//until next section is ready
 
 const handlePopupCancel = () => {
     setShowPopup(false)
@@ -50,7 +48,7 @@ const handlePopupCancel = () => {
     return (
         <main className="h-screen mx-7 md:mx-36 xl:mx-marginXl">
             <section className="flex flex-col justify-center md:items-start">
-                    <p className="pt-10 md:pt-16 xl:pt-84 xl:pb-3.5">Step 1 of 2</p>
+                    <p className="pt-10 md:pt-16 xl:pt-84 xl:pb-3.5">Step 2 of 2</p>
                     <div className="w-56 border-b-2 md:w-full">
                         <h3 className=" pb-3 font-semibold leading-9 text-base md:pb-4 md:text-3xl xl:text-txt32 xl:pb-23">Let's get to know each other!</h3>
                     </div>
@@ -81,7 +79,7 @@ const handlePopupCancel = () => {
             </section>
             <section className="flex justify-end">
                 <div className="pr-6">
-                    <StyledButton children='Cancel' onClick={handleCancelButton} style={`bg-white border-2 border-lightPurple rounded-lg text-black text-xs md:text-base xl:text-xl font-normal leading-6 py-1.5 px-5 md:py-2 md:px-7`}/>
+                    <StyledButton children='Back' onClick={handleBackButton} style={`bg-white border-2 border-lightPurple rounded-lg text-black text-xs md:text-base xl:text-xl font-normal leading-6 py-1.5 px-5 md:py-2 md:px-7`}/>
                 </div>
                 <div>
                     <StyledButton children='Next' onClick={handleNextButton} style={`bg-lightPurple border-2 border-lightPurple rounded-lg text-black text-xs md:text-base xl:text-xl font-normal leading-6 p-1.5 px-5 md:py-2 md:px-7`}/>
@@ -98,4 +96,4 @@ const handlePopupCancel = () => {
     ) 
 }
 
-export default ScreenerQuestion
+export default ScreenerQuestion2

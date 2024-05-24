@@ -5,6 +5,7 @@ import logo from '../src/assets/logo.jpg'
 import PageFooter from './components_true/PageFooter';
 import Navbar from './components_true/Navbar';
 import ScreenerQuestion from './components_true/ScreenerQ1';
+import ScreenerQuestion2 from './components_true/ScreenerQ2';
 
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
       <Routes>
         <Route path='/' element={<LandingPage/>}/>
         <Route path='/screenerquestion1' element={<ScreenerQuestion question={'Are you transitioning in a new career?'}/>}/>
-        <Route path='/screenerquestion2' element={<ScreenerQuestion question={'Are you aspiring to pursue a career as a software engineer?'}/>}/>
+        <Route path='/screenerquestion2' element={<ScreenerQuestion2 question={'Are you aspiring to pursue a career as a software engineer?'}/>}/>
       </Routes>
       <PageFooter />
     </BrowserRouter>
