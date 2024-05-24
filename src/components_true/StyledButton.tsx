@@ -3,7 +3,7 @@ import React from 'react';
 interface ButtonProps {
     onClick?: () => void; // Optional onClick event handler
     children: React.ReactNode; // Required children (button label)
-    style?: string; // Optional className for additional styling
+    style: string; // Optional className for additional styling
   }
   
   const Button: React.FC<ButtonProps> = ({ onClick, children, style }) => {
