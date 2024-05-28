@@ -16,12 +16,6 @@ export default {
       fontFamily: {
         inter:['inter']
       },
-      fontSize: {
-        52:'52px',
-        48:'48px',
-        32:'32px',
-        20:'20px'
-      },
       fontWeight: {
         bold:'700',
         semibold:'600',
@@ -35,9 +29,12 @@ export default {
         black: '#0d0d0d', //black
       },
       fontSize:{
+        txt20: '1.25rem', //20px
         txt28: '1.75rem', //28px
         txt32: '2rem', //32px
         txt40: '2.5rem', //40px
+        txt48: '3rem', //48px
+        txt52: '3.25rem' //52px
       },
       margin: {
         marginXl: '22.125rem', //354px
