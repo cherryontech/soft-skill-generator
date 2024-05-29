@@ -24,7 +24,7 @@ const handleNextButton = () => {
         setShowPopup(true);
         console.log('next clicked')
     } else {
-        navigate('/') //this will navigate to the skill questions
+        navigate('/onboardingquestion1') //this will navigate to the skill questions
     }
 }
 
