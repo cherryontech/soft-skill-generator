@@ -35,6 +35,9 @@ export default {
         black: '#0d0d0d', //black
       },
       fontSize:{
+        txt9: '9px',
+        txt10: '10px',
+        txt13: '13px',
         txt28: '1.75rem', //28px
         txt32: '2rem', //32px
         txt40: '2.5rem', //40px

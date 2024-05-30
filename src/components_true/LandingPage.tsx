@@ -19,7 +19,7 @@ const LandingPage: React.FC = () => {
     <Header />
     <div className="flex flex-col h-full justify-center bg-white">
       <div className='flex justify-center items-center'>
-        <h1 className="text-2xl font-bold text-black my-26 mx-2 md:mt-70 block text-center xl:text-5xl">Unlock Your Potential with EmpowerMe</h1>
+        <h1 className="text-xl font-bold text-black my-26 mx-2 md:mt-70 block text-center xl:text-5xl">Unlock Your Potential with EmpowerMe</h1>
       </div>
       {/* Container A: Images & paragraphs */}
       <div className="flex flex-col justify-center items-center bg-white px-6 pb-6 mb-4">
@@ -44,7 +44,7 @@ const LandingPage: React.FC = () => {
       {/* Container B: Who is it for? */}
       <div className="w-full h-full bg-white flex flex-col">
         <div className="text-center">
-          <h1 className="text-lg font-bold text-black md:text-2xl xl:text-5xl">Who is it for?</h1>
+          <h1 className="text-xl font-bold text-black md:text-2xl xl:text-5xl">Who is it for?</h1>
         </div>
 
         {/* Column of check marks & career switcher texts */}
@@ -61,7 +61,7 @@ const LandingPage: React.FC = () => {
 
       {/* Container B.5 - Start Assessment Button  */}
       <div className="flex justify-center items-center mt-5">
-        <StyledButton style={`bg-lightPurple rounded-lg px-4 py-2.5 text-black text-lg font-semibold leading-6`}>
+        <StyledButton style={`bg-lightPurple rounded-lg px-4 py-1.5 text-black text-xs font-semibold leading-6`}>
           Start Assessment
         </StyledButton>
       </div>
@@ -78,7 +78,7 @@ const LandingPage: React.FC = () => {
               />
           </div>
             <div className="flex text-lg text-black mb-4 mt-6">
-              <p className='text-center text-base xl:text-2xl'>
+              <p className='text-center text-txt13 xl:text-2xl'>
                 EmpowerMe is completely free because we believe everyone deserves a fair chance in this field. 
                 Let's level the playing field together and make it effortless to harness and showcase your transferable skills in the tech industry.
               </p>
@@ -92,7 +92,7 @@ const LandingPage: React.FC = () => {
           <h2 className="text-xl md:text-txt40 font-semibold text-black xl:text-5xl">Complete in 3 simple steps</h2>
         </div>
 
-        <div className="flex flex-col xl:flex-row w-60 md:w-72 xl:w-11/12 justify-between">
+        <div className="flex flex-col xl:flex-row w-60 md:w-72 xl:w-11/12 justify-between items-center">
           {/* Purple Container 1 */}
           <SimpleStepsBox 
               header="Answer Our Questions"
@@ -121,7 +121,7 @@ const LandingPage: React.FC = () => {
         </div>
 
         <div className="flex justify-center items-center mt-5">
-          <StyledButton style={`bg-lightPurple rounded-lg px-4 py-2.5 text-black text-lg font-semibold leading-6`}>
+          <StyledButton style={`bg-lightPurple rounded-lg px-4 py-1.5 text-black text-xs font-semibold leading-6`}>
             Start Assessment
           </StyledButton>
         </div>

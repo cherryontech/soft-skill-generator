@@ -24,7 +24,7 @@ function Navbar({ title }: NavbarProps) {
             {!hideButtonPaths.includes(location.pathname) &&  (
                 <StyledButton 
                     onClick={handleAssessmentButton}
-                    style={`bg-lightPurple rounded-lg h-12 px-4 py-2.5 text-black text-lg mr-8 md:mr-20 xl:mr-24 font-semibold leading-6`}>
+                    style={`bg-lightPurple rounded-lg h-12 px-4 py-1.5 text-black text-xs mr-8 md:mr-20 xl:mr-24 font-semibold`}>
                     Start Assessment
                 </StyledButton>
             )}
