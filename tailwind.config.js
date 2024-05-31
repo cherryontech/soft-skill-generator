@@ -40,6 +40,7 @@ export default {
         txt13: '13px',
         txt15: '15px',
         txt17: '17px',
+        txt22: '22px',
         txt28: '1.75rem', //28px
         txt32: '2rem', //32px
         txt40: '2.5rem', //40px

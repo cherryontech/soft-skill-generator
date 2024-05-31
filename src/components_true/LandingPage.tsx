@@ -46,7 +46,7 @@ const LandingPage: React.FC = () => {
       {/* Container B: Who is it for? */}
       <div className="w-full h-full bg-white flex flex-col">
         <div className="text-center">
-          <h1 className="text-xl font-bold text-black md:text-2xl xl:text-5xl">Who is it for?</h1>
+          <h1 className="text-xl font-bold text-black md:text-2xl xl:text-5xl xl:pt-10">Who is it for?</h1>
         </div>
 
         {/* Column of check marks & career switcher texts */}
@@ -70,7 +70,7 @@ const LandingPage: React.FC = () => {
 
       {/* Container C: Quote */}
       <div className="w-full h-full bg-white flex justify-center items-center mt-10 md:mt-24">
-        <div className="flex flex-row w-4/5 mx-6 md:mx-0 border border-gray-300 rounded-md p-4 xl:px-14 xl:py-8 xl:justify-center">
+        <div className="flex flex-row w-4/5 mx-6 md:mx-0 border border-gray-300 rounded-md p-4 xl:px-36 xl:py-8 xl:justify-center">
           <div className="flex justify-left text-lg text-black mr-2 md:mr-0 xl:mr-6">
             {/* Quotation mark image */}
             <img
@@ -80,13 +80,13 @@ const LandingPage: React.FC = () => {
               />
           </div>
             <div className="flex text-lg text-black mb-4 mt-6">
-              <p className='text-center text-txt13 md:text-txt17 xl:text-2xl'>
+              <p className='text-center text-txt13 md:text-txt17 xl:text-xl'>
                 EmpowerMe is completely free because we believe everyone deserves a fair chance in this field. 
                 Let's level the playing field together and make it effortless to harness and showcase your transferable skills in the tech industry.
               </p>
+            </div>
           </div>
         </div>
-      </div>
 
       {/* Container 4: Complete in 3 simple steps */}
       <div className="flex flex-col w-full h-full justify-center items-center mt-10 md:mt-24 mb-50 md:mb-70 xl:mb-100 bg-white">
@@ -94,7 +94,7 @@ const LandingPage: React.FC = () => {
           <h2 className="text-xl md:text-3xl font-semibold text-black xl:text-5xl">Complete in 3 simple steps</h2>
         </div>
 
-        <div className="flex flex-col xl:flex-row w-60 md:w-72 xl:w-11/12 justify-between items-center">
+        <div className="flex flex-col xl:flex-row w-60 md:w-72 xl:w-11/12 justify-evenly items-center">
           {/* Purple Container 1 */}
           <SimpleStepsBox 
               header="Answer Our Questions"
@@ -102,7 +102,7 @@ const LandingPage: React.FC = () => {
               imageUrl="path_to_your_image.jpg"
               altText="Placeholder image."
               circleText='1'
-            />
+            /> 
           {/* Purple Container 2 */}
           <SimpleStepsBox
             className="xl:mx-6"
