@@ -4,6 +4,7 @@ import CareerSwitcher from './CareerSwitcher';
 import SimpleStepsBox from './SimpleStepsBox';
 import ImageWithText from './ImageWithText';
 import Header from './Header';
+import FloatingButton from './FloatingButton';
 
 import identify_your_transferable_skills from '../assets/identify_your_transerable_skills.png';
 import confidently_communicate_your_skills from '../assets/confidently_communicate_skills.png';
@@ -16,6 +17,7 @@ const LandingPage: React.FC = () => {
   return (
     // body div
     <>
+    <FloatingButton />
     <Header />
     <div className="flex flex-col h-full justify-center bg-white">
       <div className='flex justify-center items-center'>
