@@ -60,7 +60,14 @@ const LandingPage: React.FC = () => {
 
         </div>
       </div>
-      
+
+      {/* Container B.5 - Start Assessment Button  */}
+      <div className="flex justify-center items-center mt-5">
+        <StyledButton style={`bg-lightPurple rounded-lg px-4 py-1.5 text-black text-xs font-semibold leading-6`}>
+          Start Assessment
+        </StyledButton>
+      </div>
+
       {/* Container C: Quote */}
       <div className="w-full h-full bg-white flex justify-center items-center mt-10 md:mt-24">
         <div className="flex flex-row w-4/5 mx-6 md:mx-0 border border-gray-300 rounded-md p-4 xl:px-14 xl:py-8 xl:justify-center">
@@ -114,6 +121,13 @@ const LandingPage: React.FC = () => {
             circleText='3'
             />
         </div>
+
+        <div className="flex justify-center items-center mt-5">
+          <StyledButton style={`bg-lightPurple rounded-lg px-4 py-1.5 text-black text-xs font-semibold leading-6`}>
+            Start Assessment
+          </StyledButton>
+        </div>
+
       </div>
 
     </div>
