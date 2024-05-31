@@ -13,15 +13,15 @@ const ImageWithText: React.FC<ImageWithTextProps> = ({ imageUrl, altText, header
       {/* Left side: Image */}
       <div className='flex justify-center'>
         <img
-          className="rounded-20 flex-1 max-w-xs h-28 md:h-32 xl:h-52 object-cover"
+          className="rounded-20 flex-1 max-w-xs h-28 md:h-44 xl:h-52 object-cover"
           src={imageUrl}
           alt={altText}
         />
       </div>
       {/* Right side: Header and Paragraph */}
       <div className="flex flex-col justify-center items-center xl:items-start xl:pl-12">
-        <h2 className="text-xl font-semibold text-black mb-2 text-center mt-3.5 xl:text-left xl:text-txt32 xl:pb-6">{header}</h2>
-        <p className="text-txt9 text-black mb-4 text-center md:w-6/12 xl:text-left xl:text-xl xl:w-full">{paragraph}</p>
+        <h2 className="text-xl font-semibold text-black mb-2 text-center mt-3.5 md:text-2xl xl:text-left xl:text-txt32 xl:pb-6">{header}</h2>
+        <p className="text-txt9 text-black mb-4 text-center md:w-3/5 md:text-xs md:leading-5 xl:text-left xl:text-xl xl:w-full">{paragraph}</p>
       </div>
     </div>
   );

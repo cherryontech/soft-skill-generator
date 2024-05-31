@@ -38,6 +38,8 @@ export default {
         txt9: '9px',
         txt10: '10px',
         txt13: '13px',
+        txt15: '15px',
+        txt17: '17px',
         txt28: '1.75rem', //28px
         txt32: '2rem', //32px
         txt40: '2.5rem', //40px
@@ -60,6 +62,7 @@ export default {
         84: '5.25rem', //84px
       },
       lineHeight: {
+        36: '3rem',
         72: '4.5rem', //72px
       }
     },
