@@ -1,5 +1,5 @@
 import React from 'react';
-import StyledButton from './StyledButton';
+// import StyledButton from './StyledButton';
 import CareerSwitcher from './CareerSwitcher';
 import SimpleStepsBox from './SimpleStepsBox';
 import ImageWithText from './ImageWithText';
@@ -68,11 +68,11 @@ const LandingPage: React.FC = () => {
       </div>
 
       {/* Container B.5 - Start Assessment Button  */}
-      <div className="flex justify-center items-center mt-5">
+      {/* <div className="flex justify-center items-center mt-5">
         <StyledButton style={`bg-lightPurple rounded-lg px-4 py-2.5 text-black text-lg font-semibold leading-6`}>
           Start Assessment
         </StyledButton>
-      </div>
+      </div> */}
 
       {/* Container C: Quote */}
       <div className="w-full h-full bg-white flex justify-center items-center mt-10 md:mt-24">
@@ -128,11 +128,11 @@ const LandingPage: React.FC = () => {
             />
         </div>
 
-        <div className="flex justify-center items-center mt-5">
+        {/* <div className="flex justify-center items-center mt-5">
           <StyledButton style={`bg-lightPurple rounded-lg px-4 py-2.5 text-black text-lg font-semibold leading-6`}>
             Start Assessment
           </StyledButton>
-        </div>
+        </div> */}
 
       </div>
 
