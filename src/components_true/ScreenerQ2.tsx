@@ -38,7 +38,7 @@ const closePopup = () => {
 
 const handlePopupContinue = () => {
     setShowPopup(false);
-    navigate('/') //navigate back to home page for now this will be navigate to the skill questions
+    navigate('/onboardingquestion1') //navigate back to home page for now this will be navigate to the skill questions
 }
 
 const handlePopupCancel = () => {
@@ -86,7 +86,7 @@ const handlePopupCancel = () => {
                 </div>
             </section>
                 {showPopup && (
-                    <ScreenerPopup message="This app is not for you"
+                    <ScreenerPopup message="Hello! While our assessment is tailored for career changers, feel free to explore it anyway- you might find some valuable insights!"
                         onClose={closePopup}
                         onClick={handlePopupContinue}
                         onCancel={handlePopupCancel}
