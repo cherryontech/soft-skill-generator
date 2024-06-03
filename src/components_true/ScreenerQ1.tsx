@@ -88,7 +88,7 @@ const handlePopupCancel = () => {
                 </div>
             </section>
                 {showPopup && (
-                    <ScreenerPopup message="This app is not for you"
+                    <ScreenerPopup message="Hello! While our assessment is tailored for career changers, feel free to explore it anyway- you might find some valuable insights!"
                         onClose={closePopup}
                         onClick={handlePopupContinue}
                         onCancel={handlePopupCancel}
