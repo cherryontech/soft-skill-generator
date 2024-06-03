@@ -35,14 +35,14 @@ const LandingPage: React.FC = () => {
         <ImageWithText
           imageUrl={identify_transferable_skills}
           altText="The silhouette of a person standing between two mountains in near dark as the sun begins to peek over the horizon behind them."
-          header="Identify Your Transferable Skills"
+          header="Identify your transferable skills"
           paragraph="Transitioning to a new industry can be challenging, especially when your experience doesn't directly align with the new field. EmpowerMe helps you identify your transferable skills and bridge the gap between your current role and your desired career path."
         />
         {/* Section 2: Confidently Communicate Your Skills */}
         <ImageWithText
           imageUrl={communicate_your_skills_with_confidence}
           altText="A person in orange headphones sits in a chair with chin resting in hand, scrawling in a notebook & concentrating."
-          header="Communicate Your Skills With Confidence"
+          header="Communicate your skills with confidence"
           paragraph="Overcome self-doubt and insecurity by learning how to effectively communicate your achievements and capabilities. EmpowerMe helps you articulate your value with clarity and confidence."
         />
 
@@ -95,7 +95,7 @@ const LandingPage: React.FC = () => {
         <div className="flex flex-col xl:flex-row w-60 md:w-72 xl:w-11/12 justify-evenly items-center">
           {/* Purple Container 1 */}
           <SimpleStepsBox 
-              header="Answer Our Questions"
+              header="Answer our questions"
               paragraph="Answer a series of questions to help us gain a deeper understanding of your background and career goals."
               imageUrl={answer_our_questions}
               altText="An image cropped in a circle that shows table covered in papers with arms reaching in to write notes."
@@ -104,7 +104,7 @@ const LandingPage: React.FC = () => {
           {/* Purple Container 2 */}
           <SimpleStepsBox
             className="xl:mx-6"
-            header="Share Your Experience"
+            header="Share your experience"
             paragraph="Share your professional experiences and achievements with us to uncover valuable transferable skills."
             imageUrl={share_your_experience}
             altText="An image cropped in a cirlce that shows hands being raised."
@@ -112,7 +112,7 @@ const LandingPage: React.FC = () => {
             />
           {/* Purple Container 3 */}
           <SimpleStepsBox
-            header="Get Personalized Results"
+            header="Get personalized results"
             paragraph="Receive personalized insights and recommendations tailored to empower your unique career journey."
             imageUrl={get_personalized_results}
             altText="An image cropped in a circle that shows sticky notes on a wall."
