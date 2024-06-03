@@ -3,7 +3,7 @@ import headerphoto from '/src/assets/headerphoto.jpg';
 
 //Landing page header
 //contains image, logo(present on every page & routes back to landing page onClick)
-//
+
 function Header() {
 
     return (
@@ -23,8 +23,6 @@ function Header() {
             </div>
         </div>
     </section>
-   
- 
     
     </>
     )
