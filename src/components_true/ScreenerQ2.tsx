@@ -11,6 +11,7 @@ type QuestionProps = {
 const ScreenerQuestion2 = (props: QuestionProps) => {
     const [showPopup, setShowPopup] = useState(false);
     const [ selectedAnswer, setSelectedAnswer ] = useState<string | null>(null)
+    const [error, setError] = useState<string | null>(null)
     const navigate = useNavigate()
 
     const handelRadioChange =  (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -20,11 +21,13 @@ const ScreenerQuestion2 = (props: QuestionProps) => {
     }
 
 const handleNextButton = () => {
-    if(selectedAnswer === "No") {
+    if (!selectedAnswer) {
+        setError('Please select an option before proceeding.')
+    } else if (selectedAnswer === "No") {
         setShowPopup(true);
         console.log('next clicked')
     } else {
-        navigate('/onboardingquestion1') //this will navigate to the skill questions
+        navigate('/onboardingquestion1') // This will navigate to the skill questions
     }
 }
 
@@ -48,34 +51,35 @@ const handlePopupCancel = () => {
     return (
         <main className="h-screen mx-7 md:mx-36 xl:mx-marginXl">
             <section className="flex flex-col justify-center md:items-start">
-                    <p className="pt-10 md:pt-16 xl:pt-84 xl:pb-3.5">Step 2 of 2</p>
-                    <div className="w-56 border-b-2 md:w-full">
-                        <h3 className=" pb-3 font-semibold leading-9 text-base md:pb-4 md:text-3xl xl:text-txt32 xl:pb-23">Let's get to know each other!</h3>
+                <p className="pt-10 md:pt-16 xl:pt-84 xl:pb-3.5">Step 2 of 2</p>
+                <div className="w-56 border-b-2 md:w-full">
+                    <h3 className=" pb-3 font-semibold leading-9 text-base md:pb-4 md:text-3xl xl:text-txt32 xl:pb-23">Let's get to know each other!</h3>
+                </div>
+                <h4 className="pt-5 leading-9 text-base md:text-txt28 font-normal md:pt-7 xl:pt-42">{props.question}</h4>
+                <div>
+                    <div className="pt-5px md:pt-3 xl:pt-22">
+                        <input 
+                            type="radio" 
+                            id="yes" 
+                            name="answer" 
+                            value="Yes"
+                            onChange={handelRadioChange}
+                        />
+                        <label className="pl-3.5 text-xs font-normal md:text-base xl:text-xl" htmlFor="yes">Yes</label>
                     </div>
-                    <h4 className="pt-5 leading-9 text-base md:text-txt28 font-normal md:pt-7 xl:pt-42">{props.question}</h4>
-                    <div>
-                        <div className="pt-5px md:pt-3 xl:pt-22">
-                            <input 
-                                type="radio" 
-                                id="yes" 
-                                name="answer" 
-                                value="Yes"
-                                onChange={handelRadioChange}
-                            />
-                            <label className="pl-3.5 text-xs font-normal md:text-base xl:text-xl" htmlFor="yes">Yes</label>
-                        </div>
-                        <div className="pt-1 xl:pt-11px pb-10">
-                            <input 
-                                className="text-xs font-normal xl:text-xl"
-                                type="radio" 
-                                id="no" 
-                                name="answer" 
-                                value="No"
-                                onChange={handelRadioChange}
-                            />
-                            <label className="pl-3.5 text-xs font-normal md:text-base xl:text-xl" htmlFor="no">No</label>
-                        </div>
+                    <div className="pt-1 xl:pt-11px pb-10">
+                        <input 
+                            className="text-xs font-normal xl:text-xl"
+                            type="radio" 
+                            id="no" 
+                            name="answer" 
+                            value="No"
+                            onChange={handelRadioChange}
+                        />
+                        <label className="pl-3.5 text-xs font-normal md:text-base xl:text-xl" htmlFor="no">No</label>
                     </div>
+                </div>
+                {error && <p style={{ color: 'red' }}>{error}</p>}
             </section>
             <section className="flex justify-end">
                 <div className="pr-6">
