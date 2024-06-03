@@ -11,6 +11,7 @@ type QuestionProps = {
 const ScreenerQuestion = (props: QuestionProps) => {
     const [showPopup, setShowPopup] = useState(false);
     const [ selectedAnswer, setSelectedAnswer ] = useState<string | null>(null)
+    const [error, setError] = useState<string | null>(null)
     const navigate = useNavigate()
 
     const handelRadioChange =  (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -20,7 +21,9 @@ const ScreenerQuestion = (props: QuestionProps) => {
     }
 
 const handleNextButton = () => {
-    if(selectedAnswer === "No") {
+    if(!selectedAnswer) {
+        setError('Please select an option before proceeding.')
+    } else if (selectedAnswer === "No") {
         setShowPopup(true);
         console.log('next clicked')
     } else {
@@ -78,6 +81,7 @@ const handlePopupCancel = () => {
                             <label className="pl-3.5 text-xs font-normal md:text-base xl:text-xl" htmlFor="no">No</label>
                         </div>
                     </div>
+                    {error && <p style={{ color: 'red' }}>{error}</p>}
             </section>
             <section className="flex justify-end">
                 <div className="pr-6">
