@@ -15,7 +15,7 @@ const CareerSwitcher: React.FC<CareerSwitcherProps> = ({label}) => {
           alt="a checkmark in a small yellow box"
         />
       </div>
-      <div className="text-base md:text-lg pl-4 xl:text-txt32">{label}</div>
+      <div className="text-base md:text-lg pl-4 xl:text-2xl">{label}</div>
     </div>
   );
 };
