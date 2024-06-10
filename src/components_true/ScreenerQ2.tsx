@@ -1,4 +1,4 @@
-import React, { useState }from "react"
+import React, { useState } from "react"
 import { useNavigate } from "react-router-dom"
 import StyledButton from "./StyledButton";
 import ScreenerPopup from "./ScreenerPopUp";
@@ -10,7 +10,7 @@ type QuestionProps = {
 
 const ScreenerQuestion2 = (props: QuestionProps) => {
     const [showPopup, setShowPopup] = useState(false);
-    const [ selectedAnswer, setSelectedAnswer ] = useState<string | null>(null)
+    const [selectedAnswer, setSelectedAnswer ] = useState<string | null>(null)
     const [error, setError] = useState<string | null>(null)
     const navigate = useNavigate()
 
@@ -90,7 +90,7 @@ const handlePopupCancel = () => {
                 </div>
             </section>
                 {showPopup && (
-                    <ScreenerPopup message="Hello! While our assessment is tailored for career changers, feel free to explore it anyway- you might find some valuable insights!"
+                    <ScreenerPopup message="Hello! While our assessment is tailored for new tech workers, feel free to explore it anyway- you might find some valuable insights!"
                         onClose={closePopup}
                         onClick={handlePopupContinue}
                         onCancel={handlePopupCancel}
