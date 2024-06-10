@@ -15,7 +15,8 @@ const OnboardingQuestion3 = (props: QuestionProps) => {
     const handelRadioChange =  (event: React.ChangeEvent<HTMLInputElement>) => {
         const value = event.target.value
         console.log('Selected answer:', value)
-        setSelectedAnswer(selectedAnswer)
+        setSelectedAnswer(value)
+        setError(null)
     }
 
 const handleNextButton = () => {
@@ -43,9 +44,9 @@ const handleBackButton = () => {
                         <div className="pt-5px md:pt-3 xl:pt-22">
                             <input 
                                 type="radio" 
-                                id="FE-Dev" 
+                                id="Front-End Developer" 
                                 name="answer" 
-                                value="FE-Dev"
+                                value="Front-End Developer"
                                 onChange={handelRadioChange}
                             />
                             <label className="pl-3.5 text-xs font-normal md:text-base xl:text-xl" htmlFor="Front-End Developer">Software technology</label>
@@ -54,9 +55,9 @@ const handleBackButton = () => {
                             <input 
                                 className="text-xs font-normal xl:text-xl"
                                 type="radio" 
-                                id="BE-Dev" 
+                                id="Non-tech company" 
                                 name="answer" 
-                                value="BE-Dev"
+                                value="Non-tech company"
                                 onChange={handelRadioChange}
                             />
                             <label className="pl-3.5 text-xs font-normal md:text-base xl:text-xl" htmlFor="Back-end Developer">Non-tech company</label>
@@ -64,19 +65,19 @@ const handleBackButton = () => {
                         <div className="pt-5px md:pt-3 xl:pt-22">
                             <input 
                                 type="radio" 
-                                id="FS-Dev" 
+                                id="Fullstack Developer" 
                                 name="answer" 
-                                value="FS-Dev"
+                                value="Fullstack Developer"
                                 onChange={handelRadioChange}
                             />
                             <label className="pl-3.5 text-xs font-normal md:text-base xl:text-xl" htmlFor="Fullstack Developer">Government / nonprofit</label>
                         </div>
-                        <div className="pt-5px md:pt-3 xl:pt-22">
+                        <div className="pt-5px md:pt-3 xl:pt-22 pb-10">
                             <input 
                                 type="radio" 
-                                id="DevOpsEng" 
+                                id="No preference" 
                                 name="answer" 
-                                value="DevOpsEng"
+                                value="No preference"
                                 onChange={handelRadioChange}
                             />
                             <label className="pl-3.5 text-xs font-normal md:text-base xl:text-xl" htmlFor="DevOps Engineer">Not sure / no preference</label>
