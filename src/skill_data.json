@@ -88,23 +88,6 @@
                 "description": "Working well within diverse teams."
               }
             ]
-          },
-          {
-            "role": "Other (please specify)",
-            "skills": [
-              {
-                "name": "Flexibility",
-                "description": "Adapting to varied roles and responsibilities."
-              },
-              {
-                "name": "Communication",
-                "description": "Articulating your role and contributions clearly to others."
-              },
-              {
-                "name": "Collaboration",
-                "description": "Working effectively with team members across different disciplines."
-              }
-            ]
           }
         ]
       },
