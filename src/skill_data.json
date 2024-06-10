@@ -1,0 +1,180 @@
+{
+    "questions": [
+      {
+        "questionNumber": 1,
+        "question": "What type of role are you pursuing?",
+        "answerOptions": [
+          {
+            "role": "Front-end Developer",
+            "skills": [
+              {
+                "name": "Creativity",
+                "description": "Ability to design and create engaging user interfaces."
+              },
+              {
+                "name": "Attention to Detail",
+                "description": "Ensuring pixel-perfect designs and consistent user experiences."
+              },
+              {
+                "name": "Collaboration",
+                "description": "Effectively collaborating with designers and other developers."
+              }
+            ]
+          },
+          {
+            "role": "Back-end Developer",
+            "skills": [
+              {
+                "name": "Analytical Thinking",
+                "description": "Understanding and optimizing backend processes and data structures."
+              },
+              {
+                "name": "Attention to Detail",
+                "description": "Writing clean, efficient, and bug-free code."
+              },
+              {
+                "name": "Collaboration",
+                "description": "Working well with front-end developers and other team members."
+              }
+            ]
+          },
+          {
+            "role": "Full-stack Developer",
+            "skills": [
+              {
+                "name": "Project Management",
+                "description": "Overseeing the development process from start to finish."
+              },
+              {
+                "name": "Problem-Solving",
+                "description": "Tackling issues across the entire stack."
+              },
+              {
+                "name": "Collaboration",
+                "description": "Working well with front-end developers and other team members."
+              }
+            ]
+          },
+          {
+            "role": "DevOps Engineer",
+            "skills": [
+              {
+                "name": "Attention to Detail",
+                "description": "Ensuring smooth, error-free deployment processes."
+              },
+              {
+                "name": "Problem-Solving",
+                "description": "Identifying and resolving deployment and operational issues."
+              },
+              {
+                "name": "Collaboration",
+                "description": "Working closely with development and operations teams."
+              }
+            ]
+          },
+          {
+            "role": "Engineer",
+            "skills": [
+              {
+                "name": "Critical Thinking",
+                "description": "Analyzing problems and developing effective solutions."
+              },
+              {
+                "name": "Creativity",
+                "description": "Innovating and improving existing processes and products."
+              },
+              {
+                "name": "Collaboration",
+                "description": "Working well within diverse teams."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "questionNumber": 2,
+        "question": "What size of organization are you interested in joining?",
+        "answerOptions": [
+          {
+            "size": "Small (<100 employees)",
+            "skills": [
+              {
+                "name": "Entrepreneurial Spirit",
+                "description": "Being proactive and innovative in finding solutions and driving growth in a dynamic environment."
+              }
+            ]
+          },
+          {
+            "size": "Medium (101-999 employees)",
+            "skills": [
+              {
+                "name": "Flexibility",
+                "description": "Adapting to changes and shifts in priorities within a mid size organizational structure."
+              }
+            ]
+          },
+          {
+            "size": "Large (1000 employees)",
+            "skills": [
+              {
+                "name": "Navigating Complexity",
+                "description": "Managing complexity and bureaucracy inherent in larger organizations, including understanding hierarchies and decision-making processes."
+              }
+            ]
+          },
+          {
+            "size": "Not sure / no preference",
+            "skills": [
+              {
+                "name": "Open-Mindedness",
+                "description": "Being flexible and adaptable to opportunities across organizations of varying sizes, without being tied to specific expectations."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "questionNumber": 3,
+        "question": "In which sector are you most interested in working?",
+        "answerOptions": [
+          {
+            "sector": "Software Technology",
+            "skills": [
+              {
+                "name": "Technical Aptitude",
+                "description": "Demonstrating proficiency in understanding and working with software technologies and tools."
+              }
+            ]
+          },
+          {
+            "sector": "Non-Tech Company",
+            "skills": [
+              {
+                "name": "Business Acumen",
+                "description": "Understanding market dynamics, customer needs, and how technology can support business objectives."
+              }
+            ]
+          },
+          {
+            "sector": "Government / Nonprofit",
+            "skills": [
+              {
+                "name": "Social Impact",
+                "description": "Demonstrating a commitment to making a positive difference in society through technology initiatives."
+              }
+            ]
+          },
+          {
+            "sector": "Not Sure / No Preference",
+            "skills": [
+              {
+                "name": "Exploratory Learning",
+                "description": "Willingness to learn about various industries and sectors to determine the best fit."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  
