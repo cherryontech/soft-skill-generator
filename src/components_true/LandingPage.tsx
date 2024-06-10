@@ -26,7 +26,7 @@ const LandingPage: React.FC = () => {
     <Header />
     <div className="flex flex-col h-full justify-center bg-white">
       <div className='flex justify-center items-center'>
-        <h1 className="text-xl font-semibold text-black my-26 mx-2 md:mt-70 md:text-3xl block text-center xl:text-5xl">Unlock Your Potential with EmpowerMe</h1>
+        <h1 className="text-xl font-semibold text-black my-26 mx-2 md:mt-70 md:text-3xl block text-center xl:text-5xl">Unlock your potential with EmpowerMe</h1>
       </div>
       {/* Container A: Images & paragraphs */}
       <div className="flex flex-col justify-center items-center bg-white px-6 pb-6 mb-4">
