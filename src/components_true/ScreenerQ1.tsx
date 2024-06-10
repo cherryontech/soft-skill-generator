@@ -6,7 +6,12 @@ import ScreenerPopup from "./ScreenerPopUp";
 
 type QuestionProps = { 
     question: string;
-}
+    // TODO NEW
+    questionNumber: number;
+    options: { value: string, label: string }[];
+    nextRoute: string;
+    backRoute: string;
+};
 
 const ScreenerQuestion = (props: QuestionProps) => {
     const [showPopup, setShowPopup] = useState(false);
@@ -14,7 +19,8 @@ const ScreenerQuestion = (props: QuestionProps) => {
     const [error, setError] = useState<string | null>(null)
     const navigate = useNavigate()
 
-    const handelRadioChange =  (event: React.ChangeEvent<HTMLInputElement>) => {
+    const handleRadioChange
+     =  (event: React.ChangeEvent<HTMLInputElement>) => {
         const value = event.target.value
         console.log('Selected answer:', value)
         setSelectedAnswer(value)
@@ -28,6 +34,8 @@ const handleNextButton = () => {
         console.log('next clicked')
     } else {
         navigate('/screenerquestion2')
+        // todo NEW
+        const skills_results = localStorage.setItem(`question${props.questionNumber}`, selectedAnswer);
     }
 }
 
@@ -65,7 +73,9 @@ const handlePopupCancel = () => {
                                 id="yes" 
                                 name="answer" 
                                 value="Yes"
-                                onChange={handelRadioChange}
+                                onChange={handleRadioChange
+
+                                }
                             />
                             <label className="pl-3.5 text-xs font-normal md:text-base xl:text-xl" htmlFor="yes">Yes</label>
                         </div>
@@ -76,7 +86,9 @@ const handlePopupCancel = () => {
                                 id="no" 
                                 name="answer" 
                                 value="No"
-                                onChange={handelRadioChange}
+                                onChange={handleRadioChange
+
+                                }
                             />
                             <label className="pl-3.5 text-xs font-normal md:text-base xl:text-xl" htmlFor="no">No</label>
                         </div>

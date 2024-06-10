@@ -5,6 +5,7 @@
         "question": "What type of role are you pursuing?",
         "answerOptions": [
           {
+            "value": "FE-Dev",
             "role": "Front-end Developer",
             "skills": [
               {
@@ -22,6 +23,7 @@
             ]
           },
           {
+            "value": "BE-Dev",
             "role": "Back-end Developer",
             "skills": [
               {
@@ -39,6 +41,7 @@
             ]
           },
           {
+            "value": "FS-Dev",
             "role": "Full-stack Developer",
             "skills": [
               {
@@ -56,6 +59,7 @@
             ]
           },
           {
+            "value": "DevOpsEng",
             "role": "DevOps Engineer",
             "skills": [
               {
@@ -73,6 +77,7 @@
             ]
           },
           {
+            "value": "Engineer",
             "role": "Engineer",
             "skills": [
               {
@@ -96,6 +101,7 @@
         "question": "What size of organization are you interested in joining?",
         "answerOptions": [
           {
+            "value": "Small",
             "size": "Small (<100 employees)",
             "skills": [
               {
@@ -105,6 +111,7 @@
             ]
           },
           {
+            "value": "Medium",
             "size": "Medium (101-999 employees)",
             "skills": [
               {
@@ -114,6 +121,7 @@
             ]
           },
           {
+            "value": "Large",
             "size": "Large (1000 employees)",
             "skills": [
               {
@@ -123,6 +131,7 @@
             ]
           },
           {
+            "value": "NoPreference",
             "size": "Not sure / no preference",
             "skills": [
               {
@@ -138,6 +147,7 @@
         "question": "In which sector are you most interested in working?",
         "answerOptions": [
           {
+            "value": "SoftwareTech",
             "sector": "Software Technology",
             "skills": [
               {
@@ -147,6 +157,7 @@
             ]
           },
           {
+            "value": "NonTech",
             "sector": "Non-Tech Company",
             "skills": [
               {
@@ -156,6 +167,7 @@
             ]
           },
           {
+            "value": "GovNonProfit",
             "sector": "Government / Nonprofit",
             "skills": [
               {
@@ -165,6 +177,7 @@
             ]
           },
           {
+            "value": "NoPreference",
             "sector": "Not Sure / No Preference",
             "skills": [
               {
