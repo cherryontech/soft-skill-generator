@@ -1,0 +1,153 @@
+{
+  "Q1Questions": {
+      "question": "What type of role are you pursuing?",
+        "FEanswerOptions": {
+          "role": "Front-end Developer", 
+          "skill": [
+            {
+              "name": "Creativity",
+              "description": "Ability to design and create engaging user interfaces."
+            },
+            {
+              "name": "Attention to Detail",
+              "description": "Ensuring pixel-perfect designs and consistent user experiences."
+            },
+            {
+              "name": "Collaboration",
+              "description": "Effectively collaborating with designers and other developers."
+            }
+          ]
+      },
+        "BEanswerOptions": {
+          "role": "Back-end Developer",
+          "skill": [
+            {
+              "name": "Analytical Thinking",
+              "description": "Understanding and optimizing backend processes and data structures."
+            },
+            {
+              "name": "Attention to Detail",
+              "description": "Writing clean, efficient, and bug-free code."
+            },
+            {
+              "name": "Collaboration",
+              "description": "Working well with front-end developers and other team members."
+            }
+          ]
+      },
+        "FSanswerOptions": {
+          "role": "Full-stack Developer",
+          "skill": [
+            {
+              "name": "Project Management",
+              "description": "Overseeing the development process from start to finish."
+            },
+            {
+              "name": "Problem-Solving",
+              "description": "Tackling issues across the entire stack."
+            },
+            {
+              "name": "Collaboration",
+              "description": "Working well with front-end developers and other team members."
+            }
+        ]
+      },
+        "DOanswerOptions": {
+          "role": "DevOps Engineer",
+          "skill": [
+            {
+              "name": "Attention to Detail",
+              "description": "Ensuring smooth, error-free deployment processes."
+            },
+            {
+              "name": "Problem-Solving",
+              "description": "Identifying and resolving deployment and operational issues."
+            },
+            {
+              "name": "Collaboration",
+              "description": "Working closely with development and operations teams."
+            }
+        ]
+      },
+        "ENanswerOptions": {
+          "role": "Engineer",
+          "skill": [
+            {
+              "name": "Critical Thinking",
+              "description": "Analyzing problems and developing effective solutions."
+            },
+            {
+              "name": "Creativity",
+              "description": "Innovating and improving existing processes and products."
+            },
+            {
+              "name": "Collaboration",
+              "description": "Working well within diverse teams."
+            }
+          ]
+      }
+    },
+    "Q2Questions": {
+      "question": "What size of organization are you interested in joining?",
+        "SManswerOptions": {
+          "size": "Small (<100 employees)",
+          "skill": {
+              "name": "Entrepreneurial Spirit",
+              "description": "Being proactive and innovative in finding solutions and driving growth in a dynamic environment."
+            }
+        },
+        "MDanswerOptions": {
+          "size": "Medium (101-999 employees)",
+          "skill": {
+              "name": "Flexibility",
+              "description": "Adapting to changes and shifts in priorities within a mid size organizational structure."
+            }
+        },
+        "LGanswerOptions": {
+          "size": "Large (1000 employees)",
+          "skill": {
+              "name": "Navigating Complexity",
+              "description": "Managing complexity and bureaucracy inherent in larger organizations, including understanding hierarchies and decision-making processes."
+            }
+        },
+        "NPanswerOptions": {
+          "size": "Not sure / no preference",
+          "skill": {
+              "name": "Open-Mindedness",
+              "description": "Being flexible and adaptable to opportunities across organizations of varying sizes, without being tied to specific expectations."
+            }
+        }
+    },
+    "Q3Questions": {
+      "question": "In which sector are you most interested in working?",
+        "SWanswerOptions": {
+          "sector": "Software Technology",
+          "skill": {
+              "name": "Technical Aptitude",
+              "description": "Demonstrating proficiency in understanding and working with software technologies and tools."
+            }
+        },
+        "NTanswerOptions": {
+          "sector": "Non-Tech Company",
+          "skill": {
+              "name": "Business Acumen",
+              "description": "Understanding market dynamics, customer needs, and how technology can support business objectives."
+            }
+        },
+        "GVanswerOptions": {
+          "sector": "Government / Nonprofit",
+          "skill": {
+              "name": "Social Impact",
+              "description": "Demonstrating a commitment to making a positive difference in society through technology initiatives."
+            }
+        },
+        "NPanswerOptions": {
+          "sector": "Not Sure / No Preference",
+          "skill": {
+              "name": "Exploratory Learning",
+              "description": "Willingness to learn about various industries and sectors to determine the best fit."
+            }
+        }
+    }
+}
+  

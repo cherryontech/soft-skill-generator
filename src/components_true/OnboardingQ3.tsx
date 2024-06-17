@@ -12,10 +12,11 @@ const OnboardingQuestion3 = (props: QuestionProps) => {
     const [ error, setError ] = useState<string | null>(null)
     const navigate = useNavigate()
 
-    const handelRadioChange =  (event: React.ChangeEvent<HTMLInputElement>) => {
+    const handleRadioChange =  (event: React.ChangeEvent<HTMLInputElement>) => {
         const value = event.target.value
         console.log('Selected answer:', value)
         setSelectedAnswer(value)
+        sessionStorage.setItem('selectedAnswer', value);
         setError(null)
     }
 
@@ -23,7 +24,7 @@ const handleNextButton = () => {
     if(!selectedAnswer) {
         setError('Please select an option before proceeding.')
     } else {
-        navigate('/onboardingquestion3')
+        navigate('/topskills')
     }
 }
 
@@ -47,7 +48,7 @@ const handleBackButton = () => {
                                 id="Front-End Developer" 
                                 name="answer" 
                                 value="Front-End Developer"
-                                onChange={handelRadioChange}
+                                onChange={handleRadioChange}
                             />
                             <label className="pl-3.5 text-xs font-normal md:text-base xl:text-xl" htmlFor="Front-End Developer">Software technology</label>
                         </div>
@@ -58,7 +59,7 @@ const handleBackButton = () => {
                                 id="Non-tech company" 
                                 name="answer" 
                                 value="Non-tech company"
-                                onChange={handelRadioChange}
+                                onChange={handleRadioChange}
                             />
                             <label className="pl-3.5 text-xs font-normal md:text-base xl:text-xl" htmlFor="Back-end Developer">Non-tech company</label>
                         </div>
@@ -68,7 +69,7 @@ const handleBackButton = () => {
                                 id="Fullstack Developer" 
                                 name="answer" 
                                 value="Fullstack Developer"
-                                onChange={handelRadioChange}
+                                onChange={handleRadioChange}
                             />
                             <label className="pl-3.5 text-xs font-normal md:text-base xl:text-xl" htmlFor="Fullstack Developer">Government / nonprofit</label>
                         </div>
@@ -78,7 +79,7 @@ const handleBackButton = () => {
                                 id="No preference" 
                                 name="answer" 
                                 value="No preference"
-                                onChange={handelRadioChange}
+                                onChange={handleRadioChange}
                             />
                             <label className="pl-3.5 text-xs font-normal md:text-base xl:text-xl" htmlFor="DevOps Engineer">Not sure / no preference</label>
                         </div>

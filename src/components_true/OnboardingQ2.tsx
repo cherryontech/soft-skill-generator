@@ -12,10 +12,11 @@ const OnboardingQuestion2 = (props: QuestionProps) => {
     const [error, setError] = useState<string | null>(null)
     const navigate = useNavigate()
 
-    const handelRadioChange =  (event: React.ChangeEvent<HTMLInputElement>) => {
+    const handleRadioChange =  (event: React.ChangeEvent<HTMLInputElement>) => {
         const value = event.target.value
         console.log('Selected answer:', value)
         setSelectedAnswer(value)
+        sessionStorage.setItem('selectedAnswer', value);
         setError(null);
     }
 
@@ -49,7 +50,7 @@ const handleBackButton = () => {
                                 id="Small (<100 employees)" 
                                 name="answer" 
                                 value="Small (<100 employees)"
-                                onChange={handelRadioChange}
+                                onChange={handleRadioChange}
                             />
                             <label className="pl-3.5 text-xs font-normal md:text-base xl:text-xl" htmlFor="Small(<100 employees)">Small (under 100 employees)</label>
                         </div>
@@ -60,7 +61,7 @@ const handleBackButton = () => {
                                 id="Medium (<101-199 employees)"
                                 name="answer" 
                                 value="Medium (<101-199 employees)"
-                                onChange={handelRadioChange}
+                                onChange={handleRadioChange}
                             />
                             <label className="pl-3.5 text-xs font-normal md:text-base xl:text-xl" htmlFor="Medium(<101-199 employees)">Medium (101-199 employees)</label>
                         </div>
@@ -70,7 +71,7 @@ const handleBackButton = () => {
                                 id="Large (1000 employees)" 
                                 name="answer" 
                                 value="Large (1000 employees)"
-                                onChange={handelRadioChange}
+                                onChange={handleRadioChange}
                             />
                             <label className="pl-3.5 text-xs font-normal md:text-base xl:text-xl" htmlFor="Large (1000 employees)"> Large (1000 employees)</label>
                         </div>
@@ -80,7 +81,7 @@ const handleBackButton = () => {
                                 id="No Preference" 
                                 name="answer" 
                                 value="No Preference" 
-                                onChange={handelRadioChange}
+                                onChange={handleRadioChange}
                             />
                             <label className="pl-3.5 text-xs font-normal md:text-base xl:text-xl" htmlFor="No Preference" >No Preference</label>
                         </div>

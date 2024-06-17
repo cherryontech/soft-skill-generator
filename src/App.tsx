@@ -9,6 +9,7 @@ import ScreenerQuestion2 from './components_true/ScreenerQ2';
 import OnboardingQuestion from './components_true/OnboardingQ1';
 import OnboardingQuestion2 from './components_true/OnboardingQ2';
 import OnboardingQuestion3 from './components_true/OnboardingQ3';
+import Skills from './components_true/Skills';
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
         <Route path='/onboardingquestion1' element={<OnboardingQuestion question={'What type of role are you pursuing?'}/>}/>
         <Route path='/onboardingquestion2' element={<OnboardingQuestion2 question={'What size of organization are you interested in joining?'}/>}/>
         <Route path='/onboardingquestion3' element={<OnboardingQuestion3 question={'In which sector are you most intersted in working?'}/>}/>
+        <Route path='/topskills' element={<Skills heading={'Your Skills Leader Board: '}/>}/>
       </Routes>
       <PageFooter />
     </BrowserRouter>

@@ -7,15 +7,21 @@ type QuestionProps = {
     question: string;
 }
 
+
 const OnboardingQuestion = (props: QuestionProps) => {
-    const [ selectedAnswer, setSelectedAnswer ] = useState<string | null>(null)
+    const [ selectedAnswer, setSelectedAnswer ] = useState<string>("")
     const navigate = useNavigate()
     const [error, setError] = useState<string | null>(null)
 
-    const handelRadioChange =  (event: React.ChangeEvent<HTMLInputElement>) => {
+    const handleRadioChange =  (event: React.ChangeEvent<HTMLInputElement>) => {
         const value = event.target.value
         console.log('Selected answer:', value)
         setSelectedAnswer(value)
+        const selectedAnswerArray: string[] = [];
+        selectedAnswerArray.push(selectedAnswer);
+
+        sessionStorage.setItem('selectedAnswer', value);
+        console.log(selectedAnswerArray)
         setError(null);
     }
 
@@ -23,6 +29,8 @@ const handleNextButton = () => {
     if(!selectedAnswer) {
         setError('Please select an option before proceeding.')
     } else {
+        // save user selection to local storage
+        // localStorage.setItem(`question${props.question}`, selectedAnswer);
         navigate('/onboardingquestion2')
     }
     }
@@ -47,7 +55,7 @@ const handleBackButton = () => {
                                 id="FE-Dev" 
                                 name="answer" 
                                 value="FE-Dev"
-                                onChange={handelRadioChange}
+                                onChange={handleRadioChange}
                             />
                             <label className="pl-3.5 text-xs font-normal md:text-base xl:text-xl" htmlFor="Front-End Developer">Front-End Developer</label>
                         </div>
@@ -58,7 +66,7 @@ const handleBackButton = () => {
                                 id="BE-Dev" 
                                 name="answer" 
                                 value="BE-Dev"
-                                onChange={handelRadioChange}
+                                onChange={handleRadioChange}
                             />
                             <label className="pl-3.5 text-xs font-normal md:text-base xl:text-xl" htmlFor="Back-end Developer">Back-end Developer</label>
                         </div>
@@ -68,7 +76,7 @@ const handleBackButton = () => {
                                 id="FS-Dev" 
                                 name="answer" 
                                 value="FS-Dev"
-                                onChange={handelRadioChange}
+                                onChange={handleRadioChange}
                             />
                             <label className="pl-3.5 text-xs font-normal md:text-base xl:text-xl" htmlFor="Fullstack Developer">Fullstack Developer</label>
                         </div>
@@ -78,7 +86,7 @@ const handleBackButton = () => {
                                 id="DevOpsEng" 
                                 name="answer" 
                                 value="DevOpsEng"
-                                onChange={handelRadioChange}
+                                onChange={handleRadioChange}
                             />
                             <label className="pl-3.5 text-xs font-normal md:text-base xl:text-xl" htmlFor="DevOps Engineer">DevOps Engineer</label>
                         </div>
@@ -88,7 +96,7 @@ const handleBackButton = () => {
                                 id="Engineer" 
                                 name="answer" 
                                 value="Engineer"
-                                onChange={handelRadioChange}
+                                onChange={handleRadioChange}
                             />
                             <label className="pl-3.5 text-xs font-normal md:text-base xl:text-xl" htmlFor="Engineer">Engineer</label>
                         </div>

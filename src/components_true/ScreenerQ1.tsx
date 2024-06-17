@@ -14,7 +14,7 @@ const ScreenerQuestion = (props: QuestionProps) => {
     const [error, setError] = useState<string | null>(null)
     const navigate = useNavigate()
 
-    const handelRadioChange =  (event: React.ChangeEvent<HTMLInputElement>) => {
+    const handleRadioChange =  (event: React.ChangeEvent<HTMLInputElement>) => {
         const value = event.target.value
         console.log('Selected answer:', value)
         setSelectedAnswer(value)
@@ -65,7 +65,7 @@ const handlePopupCancel = () => {
                                 id="yes" 
                                 name="answer" 
                                 value="Yes"
-                                onChange={handelRadioChange}
+                                onChange={handleRadioChange}
                             />
                             <label className="pl-3.5 text-xs font-normal md:text-base xl:text-xl" htmlFor="yes">Yes</label>
                         </div>
@@ -76,7 +76,7 @@ const handlePopupCancel = () => {
                                 id="no" 
                                 name="answer" 
                                 value="No"
-                                onChange={handelRadioChange}
+                                onChange={handleRadioChange}
                             />
                             <label className="pl-3.5 text-xs font-normal md:text-base xl:text-xl" htmlFor="no">No</label>
                         </div>
