@@ -47,12 +47,9 @@ const SkillBoard: React.FC = () => {
   const collectSkills = () => {
     const collectedSkills: Skill [] = []
     for (const question of skillsData.questions) {
-      console.log('Answers:', answers);
-      console.log('Current question:', question.question);
 
       // Ensure the key for the question matches exactly with the key in answers
       const answer = answers[question.question];
-      console.log('Answer for the question:', answer);
 
       const answerOption = question.answerOptions.find((opt: AnswerOption) => {
         if (isRoleAnswerOption(opt)) {
