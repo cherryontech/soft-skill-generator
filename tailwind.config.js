@@ -11,6 +11,7 @@ export default {
         full: '9999px',
         lg: '0.5rem',
         20: '1.25rem', //20px
+        10: '10px'
       },
     extend: {
       fontFamily: {

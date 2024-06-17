@@ -1,18 +1,20 @@
 import React, { useState }from "react"
 import { useNavigate } from "react-router-dom"
 import StyledButton from "./StyledButton";
+import { useAnswer } from "./AnswerContext";
 
 
 type QuestionProps = { 
     question: string;
 }
 
-const OnboardingQuestion = (props: QuestionProps) => {
+const OnboardingQuestion: React.FC<QuestionProps> = ({question}) => {
     const [ selectedAnswer, setSelectedAnswer ] = useState<string | null>(null)
     const navigate = useNavigate()
     const [error, setError] = useState<string | null>(null)
+    const { updateAnswers } = useAnswer()
 
-    const handelRadioChange =  (event: React.ChangeEvent<HTMLInputElement>) => {
+    const handleRadioChange =  (event: React.ChangeEvent<HTMLInputElement>) => {
         const value = event.target.value
         console.log('Selected answer:', value)
         setSelectedAnswer(value)
@@ -23,6 +25,7 @@ const handleNextButton = () => {
     if(!selectedAnswer) {
         setError('Please select an option before proceeding.')
     } else {
+        updateAnswers(question, selectedAnswer)
         navigate('/onboardingquestion2')
     }
     }
@@ -39,15 +42,15 @@ const handleBackButton = () => {
                     <div className="w-56 border-b-2 md:w-full">
                         <h3 className=" pb-3 font-semibold leading-9 text-base md:pb-4 md:text-3xl xl:text-txt32 xl:pb-23">Last set of questions! We want to make sure our solution aligns with your expectations.</h3>
                     </div>
-                    <h4 className="pt-5 leading-9 text-base md:text-txt28 font-normal md:pt-7 xl:pt-42">{props.question}</h4>
+                    <h4 className="pt-5 leading-9 text-base md:text-txt28 font-normal md:pt-7 xl:pt-42">{question}</h4>
                     <div>
                         <div className="pt-5px md:pt-3 xl:pt-22">
                             <input 
                                 type="radio" 
                                 id="FE-Dev" 
                                 name="answer" 
-                                value="FE-Dev"
-                                onChange={handelRadioChange}
+                                value="Front-end Developer"
+                                onChange={handleRadioChange}
                             />
                             <label className="pl-3.5 text-xs font-normal md:text-base xl:text-xl" htmlFor="Front-End Developer">Front-End Developer</label>
                         </div>
@@ -57,8 +60,8 @@ const handleBackButton = () => {
                                 type="radio" 
                                 id="BE-Dev" 
                                 name="answer" 
-                                value="BE-Dev"
-                                onChange={handelRadioChange}
+                                value="Back-end Developer"
+                                onChange={handleRadioChange}
                             />
                             <label className="pl-3.5 text-xs font-normal md:text-base xl:text-xl" htmlFor="Back-end Developer">Back-end Developer</label>
                         </div>
@@ -67,18 +70,18 @@ const handleBackButton = () => {
                                 type="radio" 
                                 id="FS-Dev" 
                                 name="answer" 
-                                value="FS-Dev"
-                                onChange={handelRadioChange}
+                                value="Full-stack Developer"
+                                onChange={handleRadioChange}
                             />
-                            <label className="pl-3.5 text-xs font-normal md:text-base xl:text-xl" htmlFor="Fullstack Developer">Fullstack Developer</label>
+                            <label className="pl-3.5 text-xs font-normal md:text-base xl:text-xl" htmlFor="Full-stack Developer">Fullstack Developer</label>
                         </div>
                         <div className="pt-5px md:pt-3 xl:pt-22">
                             <input 
                                 type="radio" 
                                 id="DevOpsEng" 
                                 name="answer" 
-                                value="DevOpsEng"
-                                onChange={handelRadioChange}
+                                value="DevOps Engineer"
+                                onChange={handleRadioChange}
                             />
                             <label className="pl-3.5 text-xs font-normal md:text-base xl:text-xl" htmlFor="DevOps Engineer">DevOps Engineer</label>
                         </div>
@@ -88,7 +91,7 @@ const handleBackButton = () => {
                                 id="Engineer" 
                                 name="answer" 
                                 value="Engineer"
-                                onChange={handelRadioChange}
+                                onChange={handleRadioChange}
                             />
                             <label className="pl-3.5 text-xs font-normal md:text-base xl:text-xl" htmlFor="Engineer">Engineer</label>
                         </div>

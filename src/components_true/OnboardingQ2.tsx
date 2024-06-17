@@ -1,18 +1,20 @@
 import React, { useState }from "react"
 import { useNavigate } from "react-router-dom"
 import StyledButton from "./StyledButton";
+import { useAnswer } from "./AnswerContext"; 
 
 
 type QuestionProps = { 
     question: string;
 }
 
-const OnboardingQuestion2 = (props: QuestionProps) => {
+const OnboardingQuestion2: React.FC<QuestionProps> = ({question}) => {
     const [ selectedAnswer, setSelectedAnswer ] = useState<string | null>(null)
     const [error, setError] = useState<string | null>(null)
     const navigate = useNavigate()
+    const { updateAnswers } = useAnswer()
 
-    const handelRadioChange =  (event: React.ChangeEvent<HTMLInputElement>) => {
+    const handleRadioChange =  (event: React.ChangeEvent<HTMLInputElement>) => {
         const value = event.target.value
         console.log('Selected answer:', value)
         setSelectedAnswer(value)
@@ -23,6 +25,7 @@ const OnboardingQuestion2 = (props: QuestionProps) => {
         if(!selectedAnswer) {
             setError('Please select an option before proceeding.')
         } else {
+            updateAnswers(question, selectedAnswer)
             navigate('/onboardingquestion3')
         }
         }
@@ -41,7 +44,7 @@ const handleBackButton = () => {
                     <div className="w-56 border-b-2 md:w-full">
                         <h3 className=" pb-3 font-semibold leading-9 text-base md:pb-4 md:text-3xl xl:text-txt32 xl:pb-23">Last set of questions! We want to make sure our solution aligns with your expectations.</h3>
                     </div>
-                    <h4 className="pt-5 leading-9 text-base md:text-txt28 font-normal md:pt-7 xl:pt-42">{props.question}</h4>
+                    <h4 className="pt-5 leading-9 text-base md:text-txt28 font-normal md:pt-7 xl:pt-42">{question}</h4>
                     <div>
                         <div className="pt-5px md:pt-3 xl:pt-22">
                             <input 
@@ -49,7 +52,7 @@ const handleBackButton = () => {
                                 id="Small (<100 employees)" 
                                 name="answer" 
                                 value="Small (<100 employees)"
-                                onChange={handelRadioChange}
+                                onChange={handleRadioChange}
                             />
                             <label className="pl-3.5 text-xs font-normal md:text-base xl:text-xl" htmlFor="Small(<100 employees)">Small (under 100 employees)</label>
                         </div>
@@ -57,12 +60,12 @@ const handleBackButton = () => {
                             <input 
                                 className="text-xs font-normal xl:text-xl"
                                 type="radio" 
-                                id="Medium (<101-199 employees)"
+                                id="Medium (101-999 employees)"
                                 name="answer" 
-                                value="Medium (<101-199 employees)"
-                                onChange={handelRadioChange}
+                                value="Medium (101-999 employees)"
+                                onChange={handleRadioChange}
                             />
-                            <label className="pl-3.5 text-xs font-normal md:text-base xl:text-xl" htmlFor="Medium(<101-199 employees)">Medium (101-199 employees)</label>
+                            <label className="pl-3.5 text-xs font-normal md:text-base xl:text-xl" htmlFor="Medium(101-999 employees)">Medium (101-999 employees)</label>
                         </div>
                         <div className="pt-5px md:pt-3 xl:pt-22">
                             <input 
@@ -70,19 +73,19 @@ const handleBackButton = () => {
                                 id="Large (1000 employees)" 
                                 name="answer" 
                                 value="Large (1000 employees)"
-                                onChange={handelRadioChange}
+                                onChange={handleRadioChange}
                             />
                             <label className="pl-3.5 text-xs font-normal md:text-base xl:text-xl" htmlFor="Large (1000 employees)"> Large (1000 employees)</label>
                         </div>
                         <div className="pt-1 xl:pt-11px pb-10">
                             <input 
                                 type="radio" 
-                                id="No Preference" 
+                                id="No preference" 
                                 name="answer" 
-                                value="No Preference" 
-                                onChange={handelRadioChange}
+                                value="No preference" 
+                                onChange={handleRadioChange}
                             />
-                            <label className="pl-3.5 text-xs font-normal md:text-base xl:text-xl" htmlFor="No Preference" >No Preference</label>
+                            <label className="pl-3.5 text-xs font-normal md:text-base xl:text-xl" htmlFor="No preference" >No Preference</label>
                         </div>
                     </div>
                     {error && <p style={{ color: 'red' }}>{error}</p>}

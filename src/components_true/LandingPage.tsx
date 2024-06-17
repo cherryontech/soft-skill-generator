@@ -13,6 +13,8 @@ import share_your_experience from '../assets/share_your_experience.png'
 import get_personalized_results from '../assets/get_personalized_results.png'
 
 import quotation_mark from '../assets/quotation_mark.png';
+import Footer from './Footer';
+import logo from '../assets/logo.jpg';
 
 
 // Order of applying Tailwind CSS Classes:
@@ -123,6 +125,7 @@ const LandingPage: React.FC = () => {
       </div>
 
     </div>
+    <Footer title={logo}/>
     </>
   );
 };
