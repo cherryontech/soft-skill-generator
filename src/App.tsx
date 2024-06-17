@@ -27,7 +27,7 @@ function App() {
         <Route path='/onboardingquestion2' element={<OnboardingQuestion2 question={'What size of organization are you interested in joining?'}/>}/>
         <Route path='/onboardingquestion3' element={<OnboardingQuestion3 question={'In which sector are you most interested in working?'}/>}/>
         <Route path="/skillboard" element={<SkillBoard />} />
-        <Route path='/offboarding' element={<Offboarding quote={"You don't need to be perfect; you just need to belive in what you can achieve. Our product is designed to help you take that first step against imposter syndrome."}/>}/>
+        <Route path='/offboarding' element={<Offboarding quote={"You don't need to be perfect; you just need to believe in what you can achieve. Our product is designed to help you take that first step against imposter syndrome."}/>}/>
       </Routes>
     </BrowserRouter>
   </AnswerProvider>
