@@ -69,7 +69,7 @@ const handlePopupCancel = () => {
                             />
                             <label className="pl-3.5 text-xs font-normal md:text-base xl:text-xl" htmlFor="yes">Yes</label>
                         </div>
-                        <div className="pt-1 xl:pt-11px pb-10">
+                        <div className="pt-1 xl:pt-11px pb-6">
                             <input 
                                 className="text-xs font-normal xl:text-xl"
                                 type="radio" 
@@ -81,11 +81,11 @@ const handlePopupCancel = () => {
                             <label className="pl-3.5 text-xs font-normal md:text-base xl:text-xl" htmlFor="no">No</label>
                         </div>
                     </div>
-                    {error && <p style={{ color: 'red' }}>{error}</p>}
+                    {error && <p style={{ color: 'red' }} className="mb-6 text-xs">{error}</p>}
             </section>
             <section className="flex justify-end">
                 <div className="pr-6">
-                    <StyledButton children='Cancel' onClick={handleCancelButton} style={`bg-white border-2 border-lightPurple rounded-lg text-black text-xs md:text-base xl:text-xl font-normal leading-6 py-1.5 px-5 md:py-2 md:px-7`}/>
+                    <StyledButton children='Cancel' onClick={handleCancelButton} style={`bg-white border-2 border-lightPurple rounded-lg text-black text-xs md:text-base xl:text-xl font-normal leading-6 py-1.5 px-4 md:py-2 md:px-7`}/>
                 </div>
                 <div>
                     <StyledButton children='Next' onClick={handleNextButton} style={`bg-lightPurple border-2 border-lightPurple rounded-lg text-black text-xs md:text-base xl:text-xl font-normal leading-6 p-1.5 px-5 md:py-2 md:px-7`}/>

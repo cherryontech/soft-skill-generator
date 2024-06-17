@@ -67,7 +67,7 @@ const handlePopupCancel = () => {
                         />
                         <label className="pl-3.5 text-xs font-normal md:text-base xl:text-xl" htmlFor="yes">Yes</label>
                     </div>
-                    <div className="pt-1 xl:pt-11px pb-10">
+                    <div className="pt-1 xl:pt-11px pb-6">
                         <input 
                             className="text-xs font-normal xl:text-xl"
                             type="radio" 
@@ -79,7 +79,7 @@ const handlePopupCancel = () => {
                         <label className="pl-3.5 text-xs font-normal md:text-base xl:text-xl" htmlFor="no">No</label>
                     </div>
                 </div>
-                {error && <p style={{ color: 'red' }}>{error}</p>}
+                {error && <p style={{ color: 'red' }} className="mb-6 text-xs md:text-base">{error}</p>}
             </section>
             <section className="flex justify-end">
                 <div className="pr-6">
