@@ -61,7 +61,9 @@ export default {
         84: '5.25rem', //84px
       },
       lineHeight: {
-        36: '3rem',
+        36: '2.25rem',
+        48: '3rem',
+        64: '4rem',
         72: '4.5rem', //72px
       }
     },
