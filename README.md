@@ -1,5 +1,8 @@
-# Soft Skills Generator
-Cherry On Tech Spring Cohort 2024: Saturn Spinners Squad
+# EmpowerMe
+Cherry On Tech Spring Cohort 2024: Saturn Spinners Squad Project.
+EmpowerMe: A site to help users generate relevant soft skills related to their career aspirations.
+
+You can view our live deployment here: [EmpowerMe site](https://empowerme.netlify.app/)
 
 ## Deployment Status
 [![Netlify Status](https://api.netlify.com/api/v1/badges/678a843c-0add-4fd7-8331-d188405ca866/deploy-status)](https://app.netlify.com/sites/softskill-generator/deploys)
