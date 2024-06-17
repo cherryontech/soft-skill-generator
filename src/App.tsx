@@ -2,7 +2,6 @@ import './App.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import LandingPage from './components_true/LandingPage'
 import logo from '../src/assets/logo.jpg'
-// import PageFooter from './components_true/PageFooter';
 import Navbar from './components_true/Navbar';
 import ScreenerQuestion from './components_true/ScreenerQ1';
 import ScreenerQuestion2 from './components_true/ScreenerQ2';
@@ -28,7 +27,6 @@ function App() {
         <Route path='/onboardingquestion3' element={<OnboardingQuestion3 question={'In which sector are you most interested in working?'}/>}/>
         <Route path="/skillboard" element={<SkillBoard />} />
       </Routes>
-      {/* <PageFooter /> */}
     </BrowserRouter>
   </AnswerProvider>
   );
