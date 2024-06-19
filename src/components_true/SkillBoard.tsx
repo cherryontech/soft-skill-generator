@@ -93,7 +93,7 @@ const SkillBoard: React.FC = () => {
             <p className='text-sm md:text-base'>{skill.description}</p>
           </li>
         ))}
-        <div className='flex justify-end m-20'>
+        <div className='flex justify-content m-20 '>
         <StyledButton children='Next' onClick={handleNextButton} style={`bg-lightPurple border-2 border-lightPurple rounded-lg text-black text-xs md:text-base xl:text-xl font-normal hp-1.5 px-5 md:py-2 md:px-7`}/>
         </div>
       </ul>
