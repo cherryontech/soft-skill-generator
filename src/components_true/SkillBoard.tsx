@@ -2,6 +2,8 @@ import React from 'react';
 import skillsData from '../skill_data.json'; // Import JSON data
 import { useAnswer } from './AnswerContext';
 import academicCap from '../assets/academic-cap.svg';
+import { useNavigate } from 'react-router-dom';
+import StyledButton from './StyledButton';
 
 interface Skill {
   name: string;
@@ -40,6 +42,7 @@ const isSectorAnswerOption = (option: AnswerOption): option is SectorAnswerOptio
 
 const SkillBoard: React.FC = () => {
   const { answers } = useAnswer()
+  const navigate = useNavigate()
 
   const collectSkills = () => {
     const collectedSkills: Skill [] = []
@@ -70,6 +73,10 @@ const SkillBoard: React.FC = () => {
 
   const skills = collectSkills()
 
+  const handleNextButton = () => {
+        navigate('/offboarding')
+    }
+
   return (
     <div>
       <div className='px-6 pt-8 md:px-20 md:pt-16 md:mb-8'>
@@ -86,8 +93,12 @@ const SkillBoard: React.FC = () => {
             <p className='text-sm md:text-base'>{skill.description}</p>
           </li>
         ))}
+        <div className='flex justify-content m-20 '>
+        <StyledButton children='Next' onClick={handleNextButton} style={`bg-lightPurple border-2 border-lightPurple rounded-lg text-black text-xs md:text-base xl:text-xl font-normal hp-1.5 px-5 md:py-2 md:px-7`}/>
+        </div>
       </ul>
     </div>
+
   )
 }
 
